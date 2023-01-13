@@ -1,0 +1,67 @@
+@media screen and (max-width: 600px) {
+
+    .conteudo-botao {
+            width: 200px;
+        }
+    .conteudo-botao ul li{
+            width: 50px;
+            font-size: 10px;
+        }
+    .conteudo-botao ul li ul{
+            margin-left: 200px;
+            
+           
+        }
+    .conteudo-botao ul li ul li{
+            background-color: rgba(146, 197, 243, 0.92);
+            width: 95px;
+            font-size: 15px;
+           height: 50px;
+           position: top;
+          }
+    .conteudo ul li ul li ul li{
+            margin-left: -105px;
+            width:95px
+            ;
+            
+        }
+    .conteudo-imagem{
+            height: 1500px;
+    }
+    
+        
+    
+    
+    
+    .rodape-primeiralinha{
+            display:flex;
+            flex-direction: column;
+        }
+        
+    .rodape-primeiralinha-div1-imagem-1{
+        height: 40px; }
+        
+        
+    .rodape-primeiralinha-div1-texto-1{
+            
+            font-size: 15px;
+        }
+    .rodape-primeiralinha-div2-imagem-2{
+            height: 40px; }
+            
+            
+    .rodape-primeiralinha-div2-texto-2{
+                
+                font-size: 15px;
+            }
+    .rodape-primeiralinha-div3-imagem-3{
+        height: 30px; }
+                
+                
+    .rodape-primeiralinha-div3-texto-3{
+                    
+                    font-size: 15px;
+                }
+    }
+    
+       
