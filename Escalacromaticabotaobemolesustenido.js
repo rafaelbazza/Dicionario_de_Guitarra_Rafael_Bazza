@@ -1,5 +1,7 @@
 var notascorda6  = document.getElementsByClassName("a 6") 
 
+console.log(notascorda6)
+
 var notascorda6array = []
 
 for(i=0; i<notascorda6.length; i++){
@@ -9,7 +11,7 @@ notascorda6array.push(notascorda6[i])
 } // puxa as notas 
 
 
-var notasnaturais = document.getElementsByClassName("a 6 n") 
+var notasnaturais = document.getElementsByClassName("a n 6") 
 
 var notasnaturaisarray=[]
 
@@ -21,16 +23,18 @@ for (i=0; i<notasnaturais.length; i++){
 
 } // puxa só naturais 
 
-var notasbemol = document.getElementsByClassName("a 6 b")
+var notasbemol = document.getElementsByClassName("a b 6")
 
 var notasbemolarray=[]
 
 for (i=0; i<notasbemol.length; i++){
    notasbemolarray.push(notasbemol[i])
 
+  
+
 } // puxa só bemol 
 
-var notassustenido = document.getElementsByClassName("a 6 s")
+var notassustenido = document.getElementsByClassName("a s 6")
 
 var notassustenidoarray=[]
 
@@ -39,7 +43,35 @@ for (i=0; i<notassustenido.length; i++){
 
 } // puxa só sustenido
 
-console.log(notassustenidoarray)
+
+
+
+
+document.getElementById("escalacromaticacomacidentesembemol").addEventListener("click",  function(){
+
+
+for(i=0; i<notasnaturaisarray.length; i++){
+     
+    if(notasnaturaisarray[i].style.display="none"){notasnaturaisarray[i].style.display="block"}
+
+
+}
+
+for(i=0; i<notasbemolarray.length; i++){
+     
+    if(notasbemolarray[i].style.display="none"){notasbemolarray[i].style.display="block"}
+     
+        
+        if(notasbemolarray[3].style.display="block"){notasbemolarray[3].style.display="none"}
+       
+    
+
+
+}
+
+
+
+})
 
 
 
