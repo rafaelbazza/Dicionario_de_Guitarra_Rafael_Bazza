@@ -1,6 +1,18 @@
-var notascorda6  = document.getElementsByClassName("a 6") 
 
-console.log(notascorda6)
+/*classlist nomenclatura
+
+a = notas
+letra = cifra da nota
+numero = corda 
+n = naturais
+b bemois 
+s= sustenido
+ra =região aguda
+rg= região grave
+*/ 
+
+var notascorda6  = document.getElementsByClassName(" a") 
+
 
 var notascorda6array = []
 
@@ -11,7 +23,7 @@ notascorda6array.push(notascorda6[i])
 } // puxa as notas 
 
 
-var notasnaturais = document.getElementsByClassName("a n 6") 
+var notasnaturais = document.getElementsByClassName(" n 6") 
 
 var notasnaturaisarray=[]
 
@@ -23,7 +35,7 @@ for (i=0; i<notasnaturais.length; i++){
 
 } // puxa só naturais 
 
-var notasbemol = document.getElementsByClassName("a b 6")
+var notasbemol = document.getElementsByClassName(" b 6")
 
 var notasbemolarray=[]
 
@@ -34,7 +46,7 @@ for (i=0; i<notasbemol.length; i++){
 
 } // puxa só bemol 
 
-var notassustenido = document.getElementsByClassName("a s 6")
+var notassustenido = document.getElementsByClassName(" s 6")
 
 var notassustenidoarray=[]
 
@@ -69,9 +81,47 @@ for(i=0; i<notasbemolarray.length; i++){
 
 }
 
+for(i=0; i<notassustenidoarray.length; i++){
+         
+    if(notassustenidoarray[i].style.display="block"){notassustenidoarray[i].style.display="none"}
+     
+    
+}
+
 
 
 })
+
+document.getElementById("escalacromaticacomacidentesemsustenido").addEventListener("click",  function(){
+
+
+    for(i=0; i<notasnaturaisarray.length; i++){
+         
+        if(notasnaturaisarray[i].style.display="none"){notasnaturaisarray[i].style.display="block"}
+    
+    
+    }
+    
+    for(i=0; i<notassustenidoarray.length; i++){
+         
+        if(notassustenidoarray[i].style.display="none"){notassustenidoarray[i].style.display="block"}
+         
+        if(notassustenidoarray[0].style.display="block"){notassustenidoarray[0].style.display="none"}
+           
+       
+    }
+
+    for(i=0; i<notasbemolarray.length; i++){
+     
+        if(notasbemolarray[i].style.display="block"){notasbemolarray[i].style.display="none"}
+         
+            
+    
+    }
+    
+    
+    
+    })
 
 
 
