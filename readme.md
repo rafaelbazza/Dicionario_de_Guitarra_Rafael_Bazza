@@ -1,1 +1,1 @@
-REFATORANDO AQUI!
+Refatorando a função responsável por fazer aparecer a diatonica no braço todo, porém agora tentando implementar o algoritimo sugerido por Victor Mammana!
