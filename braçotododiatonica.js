@@ -27,7 +27,7 @@ var stringcromatica = "C n,C s,D b,D n,D s,E b,E n,E s,F n,F s,G b,G n,G s,A b,A
 var cromatica = stringcromatica.split(",");
 
 
-console.log(cromatica)
+//console.log(cromatica)
 
 
 
@@ -44,6 +44,18 @@ for(i=0; i<distanciasdiatonica.length; i++){
 
 function criaescala(parametro){
 
+
+//reset display para criar nova escala 
+var todasasNotas = document.getElementsByClassName("a");
+for(b=0;b<todasasNotas.length;b++){
+     //console.log(b)
+     //console.log(todasasNotas[b])
+
+     if(todasasNotas[b].style.display="block"){todasasNotas[b].style.display="none"}
+};
+
+
+//variaveis em que parametro é o numero do indice da nota da escala cromatica que inicia a função. 
 let j = parametro
 var escaladesejada = [cromatica[j]];
 let i
@@ -100,15 +112,15 @@ if(diatonica[i]=="S"){
             for(i=0; i<escaladesejadaArray.length -1 ; i++){
 
               
-              console.log(i)
-               console.log(escaladesejadaArray[i])
+               //console.log(i)
+               //console.log(escaladesejadaArray[i])
               
              
                var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]}`)
              
                 for(j=0;j<acessanotas.length; j++){
 
-                    console.log(acessanotas[j])
+                    //console.log(acessanotas[j])
                     acessanotas[j].style.display="block"
                 }
                
@@ -125,7 +137,7 @@ if(diatonica[i]=="S"){
 botaobraçotodoC.addEventListener("click" , function(){criaescala(0)})
 botaobraçotodoG.addEventListener("click" , function(){criaescala(11)})
 botaobraçotodoD.addEventListener("click" , function(){criaescala(3)})
-/*botaobraçotodoA.addEventListener("click" , function(){criaescala(14)})
+botaobraçotodoA.addEventListener("click" , function(){criaescala(14)})
 botaobraçotodoE.addEventListener("click" , function(){criaescala(6)})
 botaobraçotodoB.addEventListener("click" , function(){criaescala(17)})
 botaobraçotodoFs.addEventListener("click" , function(){criaescala(9)})
@@ -134,7 +146,8 @@ botaobraçotodoBb.addEventListener("click" , function(){criaescala(16)})
 botaobraçotodoEb.addEventListener("click" , function(){criaescala(5)})
 botaobraçotodoAb.addEventListener("click" , function(){criaescala(13)})
 botaobraçotodoDb.addEventListener("click" , function(){criaescala(2)})
-botaobraçotodoGb.addEventListener("click" , function(){criaescala(10)})*/
+botaobraçotodoGb.addEventListener("click" , function(){criaescala(10)})
+
 
   
       
