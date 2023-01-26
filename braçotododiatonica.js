@@ -3,6 +3,17 @@
 var botaobraçotodoC = document.getElementById("diatonicac") 
 var botaobraçotodoG = document.getElementById("diatonicag")
 var botaobraçotodoD = document.getElementById("diatonicad")
+var botaobraçotodoA = document.getElementById("diatonicaa")
+var botaobraçotodoE = document.getElementById("diatonicae")
+var botaobraçotodoB = document.getElementById("diatonicab")
+var botaobraçotodoFs = document.getElementById("diatonicafs")
+var botaobraçotodoF = document.getElementById("diatonicaf")
+var botaobraçotodoBb = document.getElementById("diatonicabb")
+var botaobraçotodoEb = document.getElementById("diatonicaeb")
+var botaobraçotodoAb = document.getElementById("diatonicaab")
+var botaobraçotodoDb = document.getElementById("diatonicadb")
+var botaobraçotodoGb= document.getElementById("diatonicagb")
+
 
 
 
@@ -14,6 +25,9 @@ var distanciasdiatonica ="TTSTTTS"
 var stringcromatica = "C n,C s,D b,D n,D s,E b,E n,E s,F n,F s,G b,G n,G s,A b,A n,A s,B b,B n,C b";
 
 var cromatica = stringcromatica.split(",");
+
+
+console.log(cromatica)
 
 
 
@@ -111,6 +125,16 @@ if(diatonica[i]=="S"){
 botaobraçotodoC.addEventListener("click" , function(){criaescala(0)})
 botaobraçotodoG.addEventListener("click" , function(){criaescala(11)})
 botaobraçotodoD.addEventListener("click" , function(){criaescala(3)})
+/*botaobraçotodoA.addEventListener("click" , function(){criaescala(14)})
+botaobraçotodoE.addEventListener("click" , function(){criaescala(6)})
+botaobraçotodoB.addEventListener("click" , function(){criaescala(17)})
+botaobraçotodoFs.addEventListener("click" , function(){criaescala(9)})
+botaobraçotodoF.addEventListener("click" , function(){criaescala(8)})
+botaobraçotodoBb.addEventListener("click" , function(){criaescala(16)})
+botaobraçotodoEb.addEventListener("click" , function(){criaescala(5)})
+botaobraçotodoAb.addEventListener("click" , function(){criaescala(13)})
+botaobraçotodoDb.addEventListener("click" , function(){criaescala(2)})
+botaobraçotodoGb.addEventListener("click" , function(){criaescala(10)})*/
 
   
       
