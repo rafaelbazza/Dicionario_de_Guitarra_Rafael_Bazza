@@ -1,13 +1,23 @@
 
-var botao = document.getElementById('tendi')
+
+var botaobraçotodoC = document.getElementById("diatonicac") 
+var botaobraçotodoG = document.getElementById("diatonicag")
+var botaobraçotodoD = document.getElementById("diatonicad")
+
+
+
 
 var diatonica = [];
 
 var distanciasdiatonica ="TTSTTTS"
 
-var stringcromatica = "C,C#,Db,D,D#,Eb,E,E#,F,F#,Gb,G,G#,Ab,A,A#,Bb,B,Cb";
+var stringcromatica = "C n,C s,D b,D n,D s,E b,E n,E s,F n,F s,G b,G n,G s,A b,A n,A s,B b,B n,C b";
 
 var cromatica = stringcromatica.split(",");
+
+
+
+var escaladesejadaArray =[];
 
 
 
@@ -18,27 +28,17 @@ for(i=0; i<distanciasdiatonica.length; i++){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 function criaescala(parametro){
 
 let j = parametro
 var escaladesejada = [cromatica[j]];
 let i
 
+//for responsavel por inserir a cromatica para cada tonalidade a depender do parametro 
 for(i=0; i<diatonica.length; i++){
 
 
-
+//condicional do tom 
  
 if(diatonica[i]=="T"){
 
@@ -56,6 +56,7 @@ if(diatonica[i]=="T"){
  }
 }
 
+//condicional do semitom 
 
 if(diatonica[i]=="S"){
 
@@ -67,32 +68,51 @@ if(diatonica[i]=="S"){
                 }  
                
            
-              escaladesejada = escaladesejada +  cromatica[j].split(',');
+            //cria string da escala chamada no parametro na variavel escaladesejada 
+            //dentro do escopo do for da diatonica 
+
+              escaladesejada = escaladesejada + "," +  cromatica[j].split();
+
+             
              
 
                 }
 
-            
+             //transforma a estring gerada no ultimo for, em array.
+             escaladesejadaArray = escaladesejada.split(",");
 
-            console.log(escaladesejada)
+
+           //for que faz dentro do escopo da função aparecer as notas   
+            for(i=0; i<escaladesejadaArray.length -1 ; i++){
+
+              
+              console.log(i)
+               console.log(escaladesejadaArray[i])
+              
+             
+               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]}`)
+             
+                for(j=0;j<acessanotas.length; j++){
+
+                    console.log(acessanotas[j])
+                    acessanotas[j].style.display="block"
+                }
+               
+               
+          }
+
+    
+        
 
             }
 
 
             
+botaobraçotodoC.addEventListener("click" , function(){criaescala(0)})
+botaobraçotodoG.addEventListener("click" , function(){criaescala(11)})
+botaobraçotodoD.addEventListener("click" , function(){criaescala(3)})
 
   
+      
 
 
-function diatonicaC(){
-
-     criaescala(0)
-}
-
-function diatonicaG(){
-     criaescala(11)
-}
-
-
-
-diatonicaG()
