@@ -1,2 +1,6 @@
-Refatorei a função responsável por fazer aparecer a diatonica no braço todo, porém agora com implementação do algoritimo sugerido por Victor Mammana!
+Aplicação que estou desenvolvendo para auxiliar no estudo de instrumentos de corda. 
+
+Teste através do link:
+
+https://rafaelbazza.github.io/Dicionario_de_Guitarra_Rafael_Bazza/
 
