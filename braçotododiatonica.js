@@ -16,7 +16,7 @@ var botaobraçotodoGb= document.getElementById("diatonicagb")
 
 
 //clicks dos botões braço todo  
-botaobraçotodoC.addEventListener("click" , () => { ComportamentoBotão(0) })
+botaobraçotodoC.addEventListener("click" , () => { ComportamentoBotão(0)})
 botaobraçotodoG.addEventListener("click" , () => { ComportamentoBotão(11) })
 botaobraçotodoD.addEventListener("click" , () => { ComportamentoBotão(3) })
 botaobraçotodoA.addEventListener("click" , ()=>{ComportamentoBotão(14)})
@@ -30,39 +30,54 @@ botaobraçotodoAb.addEventListener("click" , () => {ComportamentoBotão(13)})
 botaobraçotodoDb.addEventListener("click" , () => {ComportamentoBotão(2)})
 botaobraçotodoGb.addEventListener("click" , () => {ComportamentoBotão(10)})
 
-//por corda corda 1
-
-var porcordaC = document.getElementById("porcorda1c") 
-var porcordaG = document.getElementById("porcorda1g")
-var porcordaD = document.getElementById("porcorda1d")
-var porcordaA = document.getElementById("porcorda1a")
-var porcordaE = document.getElementById("porcorda1e")
-var porcordaB = document.getElementById("porcorda1b")
-var porcordaFs = document.getElementById("porcorda1fs")
-var porcordaF = document.getElementById("porcorda1f")
-var porcordaBb = document.getElementById("porcorda1bb")
-var porcordaEb = document.getElementById("porcorda1eb")
-var porcordaAb = document.getElementById("porcorda1ab")
-var porcordaDb = document.getElementById("porcorda1db")
-var porcordaGb= document.getElementById("porcorda1gb")
 
 
 
+
+//função que 
+
+
+function PorCorda(props){
+     
+var porcordaC = document.getElementById(`porcorda${props}c`) 
+var porcordaG = document.getElementById(`porcorda${props}g`)
+var porcordaD = document.getElementById(`porcorda${props}d`)
+var porcordaA = document.getElementById(`porcorda${props}a`)
+var porcordaE = document.getElementById(`porcorda${props}e`)
+var porcordaB = document.getElementById(`porcorda${props}b`)
+var porcordaFs = document.getElementById(`porcorda${props}fs`)
+var porcordaF = document.getElementById(`porcorda${props}f`)
+var porcordaBb = document.getElementById(`porcorda${props}bb`)
+var porcordaEb = document.getElementById(`porcorda${props}eb`)
+var porcordaAb = document.getElementById(`porcorda${props}ab`)
+var porcordaDb = document.getElementById(`porcorda${props}db`)
+var porcordaGb= document.getElementById(`porcorda${props}gb`)
 
 //clicks dos botões por corda 1 
-porcordaC.addEventListener("click" , () => { console.log("cliclou"),ComportamentoBotão(0,1) })
-porcordaG.addEventListener("click" , () => { ComportamentoBotão(11,1) })
-porcordaD.addEventListener("click" , () => { ComportamentoBotão(3,1) })
-porcordaA.addEventListener("click" , ()=>{ComportamentoBotão(14,1)})
-porcordaE.addEventListener("click" , () => {ComportamentoBotão(6,1)})
-porcordaB.addEventListener("click" , () => {ComportamentoBotão(17,1)})
-porcordaFs.addEventListener("click" , () => {ComportamentoBotão(9,1)})
-porcordaF.addEventListener("click" , () => {ComportamentoBotão(8,1)})
-porcordaBb.addEventListener("click" , () => {ComportamentoBotão(16,1)})
-porcordaEb.addEventListener("click" , () => {ComportamentoBotão(5,1)})
-porcordaAb.addEventListener("click" , () => {ComportamentoBotão(13,1)})
-porcordaDb.addEventListener("click" , () => {ComportamentoBotão(2,1)})
-porcordaGb.addEventListener("click" , () => {ComportamentoBotão(10,1)})
+porcordaC.addEventListener("click" , () => {ComportamentoBotão(0,`${props}`) })
+porcordaG.addEventListener("click" , () => { ComportamentoBotão(11,`${props}`) })
+porcordaD.addEventListener("click" , () => { ComportamentoBotão(3,`${props}`) })
+porcordaA.addEventListener("click" , ()=>{ComportamentoBotão(14,`${props}`)})
+porcordaE.addEventListener("click" , () => {ComportamentoBotão(6,`${props}`)})
+porcordaB.addEventListener("click" , () => {ComportamentoBotão(17,`${props}`)})
+porcordaFs.addEventListener("click" , () => {ComportamentoBotão(9,`${props}`)})
+porcordaF.addEventListener("click" , () => {ComportamentoBotão(8,`${props}`)})
+porcordaBb.addEventListener("click" , () => {ComportamentoBotão(16,`${props}`)})
+porcordaEb.addEventListener("click" , () => {ComportamentoBotão(5,`${props}`)})
+porcordaAb.addEventListener("click" , () => {ComportamentoBotão(13,`${props}`)})
+porcordaDb.addEventListener("click" , () => {ComportamentoBotão(2,`${props}`)})
+porcordaGb.addEventListener("click" , () => {ComportamentoBotão(10,`${props}`)})
+
+
+};
+
+
+
+for(i=1; i<7 ; i++){
+
+   PorCorda(i)
+
+}
 
 
 
