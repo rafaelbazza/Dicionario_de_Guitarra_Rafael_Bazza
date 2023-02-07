@@ -72,12 +72,15 @@ porcordaGb.addEventListener("click" , () => {ComportamentoBotão(10,`${props}`)}
 };
 
 //for que ativa a função para todas 
+function AtivaPorCorda(){
 
 for(i=1; i<7 ; i++){
 
    PorCorda(i)
 
-}
+}}
+
+AtivaPorCorda();
 
 //função que libera duas cordas em todas tonalidades 
 
@@ -117,15 +120,19 @@ duascordasGb.addEventListener("click" , ()=>{ComportamentoBotão(10,props,drops)
 }
 
 //for que inicializa a função duas cordas pro braço todo
+
+function AtivaDuasCordas(){
 for (i = 1; i<6 ; i++){
     
    
 DuasCordas(i,i+1);
 
-  
+}
   
  
-}
+};
+
+AtivaDuasCordas();
 
 
 
