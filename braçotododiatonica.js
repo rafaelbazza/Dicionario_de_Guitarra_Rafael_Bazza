@@ -1,5 +1,5 @@
 
-
+//botões braço todo 
 var botaobraçotodoC = document.getElementById("diatonicac") 
 var botaobraçotodoG = document.getElementById("diatonicag")
 var botaobraçotodoD = document.getElementById("diatonicad")
@@ -13,6 +13,56 @@ var botaobraçotodoEb = document.getElementById("diatonicaeb")
 var botaobraçotodoAb = document.getElementById("diatonicaab")
 var botaobraçotodoDb = document.getElementById("diatonicadb")
 var botaobraçotodoGb= document.getElementById("diatonicagb")
+
+
+//clicks dos botões braço todo  
+botaobraçotodoC.addEventListener("click" , () => { ComportamentoBotão(0) })
+botaobraçotodoG.addEventListener("click" , () => { ComportamentoBotão(11) })
+botaobraçotodoD.addEventListener("click" , () => { ComportamentoBotão(3) })
+botaobraçotodoA.addEventListener("click" , ()=>{ComportamentoBotão(14)})
+botaobraçotodoE.addEventListener("click" , () => {ComportamentoBotão(6)})
+botaobraçotodoB.addEventListener("click" , () => {ComportamentoBotão(17)})
+botaobraçotodoFs.addEventListener("click" , () => {ComportamentoBotão(9)})
+botaobraçotodoF.addEventListener("click" , () => {ComportamentoBotão(8)})
+botaobraçotodoBb.addEventListener("click" , () => {ComportamentoBotão(16)})
+botaobraçotodoEb.addEventListener("click" , () => {ComportamentoBotão(5)})
+botaobraçotodoAb.addEventListener("click" , () => {ComportamentoBotão(13)})
+botaobraçotodoDb.addEventListener("click" , () => {ComportamentoBotão(2)})
+botaobraçotodoGb.addEventListener("click" , () => {ComportamentoBotão(10)})
+
+//por corda corda 1
+
+var porcordaC = document.getElementById("porcorda1c") 
+var porcordaG = document.getElementById("porcorda1g")
+var porcordaD = document.getElementById("porcorda1d")
+var porcordaA = document.getElementById("porcorda1a")
+var porcordaE = document.getElementById("porcorda1e")
+var porcordaB = document.getElementById("porcorda1b")
+var porcordaFs = document.getElementById("porcorda1fs")
+var porcordaF = document.getElementById("porcorda1f")
+var porcordaBb = document.getElementById("porcorda1bb")
+var porcordaEb = document.getElementById("porcorda1eb")
+var porcordaAb = document.getElementById("porcorda1ab")
+var porcordaDb = document.getElementById("porcorda1db")
+var porcordaGb= document.getElementById("porcorda1gb")
+
+console.log(porcordaC)
+
+
+//clicks dos botões por corda 1 
+porcordaC.addEventListener("click" , () => { ComportamentoBotão(0,1) })
+porcordaG.addEventListener("click" , () => { ComportamentoBotão(11) })
+porcordaD.addEventListener("click" , () => { ComportamentoBotão(3) })
+porcordaA.addEventListener("click" , ()=>{ComportamentoBotão(14)})
+porcordaE.addEventListener("click" , () => {ComportamentoBotão(6)})
+porcordaB.addEventListener("click" , () => {ComportamentoBotão(17)})
+porcordaFs.addEventListener("click" , () => {ComportamentoBotão(9)})
+porcordaF.addEventListener("click" , () => {ComportamentoBotão(8)})
+porcordaBb.addEventListener("click" , () => {ComportamentoBotão(16)})
+porcordaEb.addEventListener("click" , () => {ComportamentoBotão(5)})
+porcordaAb.addEventListener("click" , () => {ComportamentoBotão(13)})
+porcordaDb.addEventListener("click" , () => {ComportamentoBotão(2)})
+porcordaGb.addEventListener("click" , () => {ComportamentoBotão(10)})
 
 
 
@@ -42,10 +92,10 @@ for(i=0; i<distanciasdiatonica.length; i++){
 }
 
 
-function criaescala(parametro){
 
-
-//reset display para criar nova escala 
+function reset(){
+     
+     //reset display para criar nova escala 
 var todasasNotas = document.getElementsByClassName("a");
 for(b=0;b<todasasNotas.length;b++){
      //console.log(b)
@@ -54,11 +104,23 @@ for(b=0;b<todasasNotas.length;b++){
      if(todasasNotas[b].style.display="block"){todasasNotas[b].style.display="none"}
 };
 
+};
+
+
+function criaescala(tonica, corda){
+     
+   if(corda="undefined"){corda =""}
+
+
+
+
+
+
 
 //variaveis em que parametro é o numero do indice da nota da escala cromatica que inicia a função. 
-let j = parametro
+let j = tonica
 var escaladesejada = [cromatica[j]];
-let i
+
 
 //for responsavel por inserir a cromatica para cada tonalidade a depender do parametro 
 for(i=0; i<diatonica.length; i++){
@@ -97,7 +159,7 @@ if(diatonica[i]=="S"){
             //cria string da escala chamada no parametro na variavel escaladesejada 
             //dentro do escopo do for da diatonica 
 
-              escaladesejada = escaladesejada + "," +  cromatica[j].split();
+              escaladesejada = escaladesejada + "," +  cromatica[j];
 
              
              
@@ -109,18 +171,23 @@ if(diatonica[i]=="S"){
 
 
            //for que faz dentro do escopo da função aparecer as notas   
-            for(i=0; i<escaladesejadaArray.length -1 ; i++){
+            for(i=0; i<escaladesejadaArray.length; i++){
 
               
                //console.log(i)
                //console.log(escaladesejadaArray[i])
               
              
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]}`)
+               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${corda} `  )
+                  //console.log(acessanotas)
+
+                  console.log(`${escaladesejadaArray[i]} ${corda} `)
+            
              
                 for(j=0;j<acessanotas.length; j++){
 
                     //console.log(acessanotas[j])
+
                     acessanotas[j].style.display="block"
                 }
                
@@ -133,23 +200,20 @@ if(diatonica[i]=="S"){
             }
 
 
-            
-botaobraçotodoC.addEventListener("click" , function(){criaescala(0)})
-botaobraçotodoG.addEventListener("click" , function(){criaescala(11)})
-botaobraçotodoD.addEventListener("click" , function(){criaescala(3)})
-botaobraçotodoA.addEventListener("click" , function(){criaescala(14)})
-botaobraçotodoE.addEventListener("click" , function(){criaescala(6)})
-botaobraçotodoB.addEventListener("click" , function(){criaescala(17)})
-botaobraçotodoFs.addEventListener("click" , function(){criaescala(9)})
-botaobraçotodoF.addEventListener("click" , function(){criaescala(8)})
-botaobraçotodoBb.addEventListener("click" , function(){criaescala(16)})
-botaobraçotodoEb.addEventListener("click" , function(){criaescala(5)})
-botaobraçotodoAb.addEventListener("click" , function(){criaescala(13)})
-botaobraçotodoDb.addEventListener("click" , function(){criaescala(2)})
-botaobraçotodoGb.addEventListener("click" , function(){criaescala(10)})
+            //var teste = document.getElementsByClassName("C n 1")
+
+            //console.log(teste)
 
 
-  
+
+  function ComportamentoBotão(props,corda){
+
+     reset();
+     criaescala(props,corda)
+
+
+
+  };
       
 
 
