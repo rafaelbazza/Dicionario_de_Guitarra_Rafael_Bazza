@@ -34,7 +34,7 @@ botaobraçotodoGb.addEventListener("click" , () => {ComportamentoBotão(10)})
 
 
 
-//função que 
+//função que libera uma corda só para todas tonalidades 
 
 
 function PorCorda(props){
@@ -71,7 +71,7 @@ porcordaGb.addEventListener("click" , () => {ComportamentoBotão(10,`${props}`)}
 
 };
 
-
+//for que ativa a função para todas 
 
 for(i=1; i<7 ; i++){
 
@@ -79,7 +79,53 @@ for(i=1; i<7 ; i++){
 
 }
 
+//função que libera duas cordas em todas tonalidades 
 
+function DuasCordas(props,drops){
+
+
+     var duascordasC = document.getElementById(`duascordas${props}${drops}c`) 
+     var duascordasG = document.getElementById(`duascordas${props}${drops}g`)
+     var duascordasD = document.getElementById(`duascordas${props}${drops}d`)
+     var duascordasA = document.getElementById(`duascordas${props}${drops}a`)
+     var duascordasE = document.getElementById(`duascordas${props}${drops}e`)
+     var duascordasB = document.getElementById(`duascordas${props}${drops}b`)
+     var duascordasFs = document.getElementById(`duascordas${props}${drops}fs`)
+     var duascordasF = document.getElementById(`duascordas${props}${drops}f`)
+     var duascordasBb = document.getElementById(`duascordas${props}${drops}bb`)
+     var duascordasEb = document.getElementById(`duascordas${props}${drops}eb`)
+     var duascordasAb = document.getElementById(`duascordas${props}${drops}ab`)
+     var duascordasDb = document.getElementById(`duascordas${props}${drops}db`)
+     var duascordasGb= document.getElementById(`duascordas${props}${drops}gb`)
+
+
+duascordasC.addEventListener("click" , ()=>{ComportamentoBotão(0,props,drops)});  
+duascordasG.addEventListener("click" , ()=>{ComportamentoBotão(11,props,drops)}); 
+duascordasD.addEventListener("click" , ()=>{ComportamentoBotão(3,props,drops)}); 
+duascordasA.addEventListener("click" , ()=>{ComportamentoBotão(14,props,drops)});
+duascordasE.addEventListener("click" , ()=>{ComportamentoBotão(6,props,drops)}); 
+duascordasB.addEventListener("click" , ()=>{ComportamentoBotão(17,props,drops)}); 
+duascordasFs.addEventListener("click" , ()=>{ComportamentoBotão(9,props,drops)});
+duascordasF.addEventListener("click" , ()=>{ComportamentoBotão(8,props,drops)}); 
+duascordasBb.addEventListener("click" , ()=>{ComportamentoBotão(16,props,drops)});
+duascordasEb.addEventListener("click" , ()=>{ComportamentoBotão(5,props,drops)});
+duascordasAb.addEventListener("click" , ()=>{ComportamentoBotão(13,props,drops)});
+duascordasDb.addEventListener("click" , ()=>{ComportamentoBotão(2,props,drops)});
+duascordasGb.addEventListener("click" , ()=>{ComportamentoBotão(10,props,drops)});
+
+     
+}
+
+//for que inicializa a função duas cordas pro braço todo
+for (i = 1; i<6 ; i++){
+    
+   
+DuasCordas(i,i+1);
+
+  
+  
+ 
+}
 
 
 
@@ -106,8 +152,6 @@ for(i=0; i<distanciasdiatonica.length; i++){
 
 }
 
-
-
 function reset(){
      
      //reset display para criar nova escala 
@@ -120,16 +164,14 @@ for(b=0;b<todasasNotas.length;b++){
 };
 
 };
-
-
 function criaescala(tonica, corda){
 
-     console.log(corda)
+     //console.log(corda)
 
 
      if(corda==undefined){corda=""}
 
-     console.log(corda)
+     //console.log(corda)
      
    
 
@@ -201,7 +243,7 @@ if(diatonica[i]=="S"){
                var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]}  ${corda} `  )
                   //console.log(acessanotas)
                   
-                  console.log(`${escaladesejadaArray[i]} ${corda} `)
+                  //console.log(`${escaladesejadaArray[i]} ${corda} `)
             
                  
 
@@ -220,20 +262,15 @@ if(diatonica[i]=="S"){
         
 
             }
+ function ComportamentoBotão(props,corda,corda2){
 
-
-            //var teste = document.getElementsByClassName("C n 1")
-
-            //console.log(teste)
-
-
-
-  function ComportamentoBotão(props,corda){
+     if(corda2==undefined){corda2=corda }
 
      reset();
      criaescala(props,corda)
+     criaescala(props,corda2)
 
-
+     //console.log(corda2)
 
   };
       
