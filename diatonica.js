@@ -1,13 +1,68 @@
-//puxando botão CAGED Modelo C para desenvolver algoritmo 
+//consts para facilitar a vida com as strings das notas no cliclo das quartas e os indices das notas da escala no ciclo das quartas 
 
-var cagedCtomC = document.getElementById('CAGEDCc')
+const classNameEscalaBotão = ['c', 'g', 'd', 'a', 'e', 'b', 'fs', 'f', 'bb', 'eb', 'ab', 'db', 'gb'];
+const indicesDiatonicaEmQuartas = [0, 11, 3, 14, 6, 17, 9, 8, 16, 5, 13, 2, 10];
+const CAGED = ['C', 'G', 'A', 'D', 'E']
 
-cagedCtomC.addEventListener("click", () => { criaCAGED(0) })
+//variaveis da criação das esalas 
+
+var diatonica = [];
+
+var distanciasdiatonica = "TTSTTTS"
+
+var stringcromatica = "C n,C s,D b,D n,D s,E b,E n,E s,F n,F s,G b,G n,G s,A b,A n,A s,B b,B n,C b";
+
+var cromatica = stringcromatica.split(",");
+
+//console.log(cromatica)
+
+var escaladesejadaArray = [];
+
+//function com for que joga os TTSTTTS pra dentro da array diatonica 
+function iniciaDiatonica(){ 
+
+for (i = 0; i < distanciasdiatonica.length; i++) {
+     diatonica.push(distanciasdiatonica[i])
+
+}
+}
+
+//função que gera os botões para o CAGED 
+function botãoCAGED(props) {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var cagedCc = document.getElementById(`CAGED${props}${classNameEscalaBotão[0]}`)
+     var cagedCg = document.getElementById(`CAGED${props}${classNameEscalaBotão[1]}`)
+     var cagedCd = document.getElementById(`CAGED${props}${classNameEscalaBotão[2]}`)
+     var cagedCa = document.getElementById(`CAGED${props}${classNameEscalaBotão[3]}`)
+     var cagedCe = document.getElementById(`CAGED${props}${classNameEscalaBotão[4]}`)
+     var cagedCb = document.getElementById(`CAGED${props}${classNameEscalaBotão[5]}`)
+     var cagedCfs = document.getElementById(`CAGED${props}${classNameEscalaBotão[6]}`)
+     var cagedCf = document.getElementById(`CAGED${props}${classNameEscalaBotão[7]}`)
+     var cagedCbb = document.getElementById(`CAGED${props}${classNameEscalaBotão[8]}`)
+     var cagedCeb = document.getElementById(`CAGED${props}${classNameEscalaBotão[9]}`)
+     var cagedCab = document.getElementById(`CAGED${props}${classNameEscalaBotão[10]}`)
+     var cagedCdb = document.getElementById(`CAGED${props}${classNameEscalaBotão[11]}`)
+     var cagedCgb = document.getElementById(`CAGED${props}${classNameEscalaBotão[12]}`)
 
 
+     cagedCc.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[0]) })
+     cagedCg.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[1]) })
+     cagedCd.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[2]) })
+     cagedCa.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[3]) })
+     cagedCe.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[4]) })
+     cagedCb.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[5]) })
+     cagedCfs.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[6]) })
+     cagedCf.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[7]) })
+     cagedCbb.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[8]) })
+     cagedCeb.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[9]) })
+     cagedCab.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[10]) })
+     cagedCdb.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[11]) })
+     cagedCgb.addEventListener('click', () => { criaCAGED(indicesDiatonicaEmQuartas[12]) })
 
+}
 
-
+function botõesBraçoTodo (){
 
 
 //botões braço todo 
@@ -41,12 +96,9 @@ botaobraçotodoAb.addEventListener("click", () => { ComportamentoBotão(13) })
 botaobraçotodoDb.addEventListener("click", () => { ComportamentoBotão(2) })
 botaobraçotodoGb.addEventListener("click", () => { ComportamentoBotão(10) })
 
-
-
-
+};
 
 //função que libera uma corda só para todas tonalidades 
-
 
 function PorCorda(props) {
 
@@ -91,8 +143,6 @@ function AtivaPorCorda() {
 
      }
 }
-
-AtivaPorCorda();
 
 //função que libera duas cordas em todas tonalidades 
 
@@ -144,33 +194,6 @@ function AtivaDuasCordas() {
 
 };
 
-AtivaDuasCordas();
-
-
-
-var diatonica = [];
-
-var distanciasdiatonica = "TTSTTTS"
-
-var stringcromatica = "C n,C s,D b,D n,D s,E b,E n,E s,F n,F s,G b,G n,G s,A b,A n,A s,B b,B n,C b";
-
-var cromatica = stringcromatica.split(",");
-
-
-//console.log(cromatica)
-
-
-
-var escaladesejadaArray = [];
-
-
-
-
-for (i = 0; i < distanciasdiatonica.length; i++) {
-     diatonica.push(distanciasdiatonica[i])
-
-}
-
 function reset() {
 
      //reset display para criar nova escala 
@@ -183,6 +206,7 @@ function reset() {
      };
 
 };
+
 function criaescala(tonica, corda) {
 
      //console.log(corda)
@@ -282,7 +306,6 @@ function criaescala(tonica, corda) {
 
 }
 
-
 function criaCAGED(tonica) {
 
      reset();
@@ -340,173 +363,157 @@ function criaCAGED(tonica) {
      escaladesejadaArray = escaladesejada.split(",");
 
 
-     //for que faz dentro do escopo da função aparecer as notas da corda 6 
-     for (i = 2; i < 5; i++) {
 
 
-          //console.log(i)
-          //console.log(escaladesejadaArray[i])
-
-          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`)
-          //console.log(acessanotas)
-
-          console.log(escaladesejadaArray[i])
-
-
-
-
-          for (j = 0; j < acessanotas.length; j++) {
-
-               //console.log(acessanotas[j])
-
-               acessanotas[j].style.display = "block"
-          }
-
-
-     }
-
-   // for que mostra as notas na corda 5
-     for (i = 5; i < 8; i++) {
-
-
-          console.log(i)
-          //console.log(escaladesejadaArray[i])
-       
-
-          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`)
-          //console.log(acessanotas)
-
-          console.log(escaladesejadaArray[i])
-
-
-
-
-          for (j = 0; j < acessanotas.length; j++) {
-
-               //console.log(acessanotas[j])
-
-               acessanotas[j].style.display = "block"
-          }
-
-
-     }
-// for notas corda 4
-     for (i = 1; i < 4; i++) {
-
-
-          console.log(i)
-          //console.log(escaladesejadaArray[i])
-       
-
-          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`)
-          //console.log(acessanotas)
-
-          console.log(escaladesejadaArray[i])
-
-
-
-
-          for (j = 0; j < acessanotas.length; j++) {
-
-               //console.log(acessanotas[j])
-
-               acessanotas[j].style.display = "block"
-          }
-
-
-     }
-// for notas corda 3
-for (i = 4; i < 6; i++) {
-
-
-     console.log(i)
-     //console.log(escaladesejadaArray[i])
-  
-
-     var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-     //console.log(acessanotas)
-
-     console.log(escaladesejadaArray[i])
-
-
-
-
-     for (j = 0; j < acessanotas.length; j++) {
-
-          //console.log(acessanotas[j])
-
-          acessanotas[j].style.display = "block"
-     }
+MODELODEC()
 
 
 }
 
-// for corda 2
-for (i = 6; i < 9; i++) {
+function MODELODEC (){
+
+     //for que faz dentro do escopo da função aparecer as notas do CAGED
+     for (i = 0; i < 9; i++) {
 
 
-     console.log(i)
-     //console.log(escaladesejadaArray[i])
-   if(i==8){i=1}
-
-     var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`)
-     //console.log(acessanotas)
-
-     console.log(escaladesejadaArray[i])
-
-
-
-
-     for (j = 0; j < acessanotas.length; j++) {
-
-          //console.log(acessanotas[j])
-
-          acessanotas[j].style.display = "block"
-     }
-
-     if(i==1){i=9}
-
-}
-
-    //for que motra as notas na corda 1
-     for (i = 2; i < 5; i++) {
-
-
-          //console.log(i)
+          //console.log(i);
           //console.log(escaladesejadaArray[i])
 
-          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`)
-          //console.log(acessanotas)
 
-          console.log(escaladesejadaArray[i])
+          //if responsavel pela corda 6
+
+          if (i > 1 & i < 5) {
+
+               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
+               //console.log(acessanotas)
+
+               //console.log(escaladesejadaArray[i]);
 
 
 
 
-          for (j = 0; j < acessanotas.length; j++) {
+               for (j = 0; j < acessanotas.length; j++) {
 
-               //console.log(acessanotas[j])
+                    //console.log(acessanotas[j])
 
-               acessanotas[j].style.display = "block"
+                    acessanotas[j].style.display = "block";
+               };
+
+
+          };
+
+
+
+          // if responsavél pela corda 5
+
+          if (i > 4 & i < 8) {
+
+
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
+               //console.log(acessanotas)
+
+               //console.log(escaladesejadaArray[i]);
+
+
+
+
+               for (j = 0; j < acessanotas.length; j++) {
+
+                    //console.log(acessanotas[j])
+
+                    acessanotas[j].style.display = "block";
+               };
+          };
+
+          //if responsável pela corda 4
+
+
+          if (i > 0 & i < 4) {
+
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
+               //console.log(acessanotas)
+
+               //console.log(escaladesejadaArray[i]);
+
+
+
+
+               for (j = 0; j < acessanotas.length; j++) {
+
+                    //console.log(acessanotas[j])
+
+                    acessanotas[j].style.display = "block";
+               };
+
+
+          };
+
+
+          //if responsável pela corda 3
+
+          if (i > 3 & i < 6) {
+
+
+
+
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
+               //console.log(acessanotas)
+
+               //console.log(escaladesejadaArray[i])
+
+
+
+
+               for (j = 0; j < acessanotas.length; j++) {
+
+                    //console.log(acessanotas[j])
+
+                    acessanotas[j].style.display = "block"
+               }
+
+
+
+
+
+
+          }
+
+          //if responsável pela corda 2
+
+          if (i > 5) {
+
+               if (i == 8) { i = 1 };
+
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
+
+
+               for (j = 0; j < acessanotas.length; j++) {
+
+                    acessanotas[j].style.display = "block"
+               }
+
+               if (i == 1) { i = 8 }
+
+          }
+
+          // if responsável pela corda 1
+          if (i > 1 & i < 5) {
+
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
+
+               for (j = 0; j < acessanotas.length; j++) {
+
+                    acessanotas[j].style.display = "block"
+               }
+
+
           }
 
 
+
      }
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
 
 function ComportamentoBotão(props, corda, corda2) {
 
@@ -520,5 +527,12 @@ function ComportamentoBotão(props, corda, corda2) {
 
 };
 
+iniciaDiatonica()
 
+botãoCAGED("C")
 
+botõesBraçoTodo();
+
+AtivaPorCorda();
+
+AtivaDuasCordas();
