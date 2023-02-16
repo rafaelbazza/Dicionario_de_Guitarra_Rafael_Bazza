@@ -1022,7 +1022,7 @@ function MODELODEE() {
 
           //if responsável pela corda 3
 
-          if (i > 0 & i < 2) {
+          if (i > 0 & i < 4) {
 
          
 
