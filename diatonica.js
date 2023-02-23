@@ -962,6 +962,409 @@ function botãoCAGEDD() {
 //FUNÇÕES 7 DESENHOS 
 
 
+//função 7 desenhos 1
+
+function CriaSeteDesenhosUm(tonica){
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosUm();
+
+};
+
+function seteDesenhosUm (){
+     
+     TônicaSegundaTerça("6")
+     QuartaQuintaSexta("5")
+     SétimaTônicaSegunda("4")
+     TerçaQuartaQuinta("3")
+     SextaSétimaTônica("2")
+     SegundaTerçaQuarta("1")
+
+};
+
+function botãoSeteDesenhosUm() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosUmc = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosUmg = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosUmd = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosUma = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosUme = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosUmb = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosUmfs = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosUmf = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosUmbb = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosUmeb = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosUmab = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosUmdb = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosUmgb = document.getElementById(`setedesenhosdesenho1tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosUmc.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosUmg.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosUmd.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosUma.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosUme.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosUmb.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosUmfs.addEventListener('click', () => { CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosUmf.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosUmbb.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosUmeb.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosUmab.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosUmdb.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosUmgb.addEventListener('click', () => {  CriaSeteDesenhosUm(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+
+
+
+//função 7 desenhos 2 
+
+function CriaSeteDesenhosDois(tonica){
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosDois();
+
+};
+
+function seteDesenhosDois (){
+     
+     SegundaTerçaQuarta("6")
+     QuintaSextaSétima("5")
+     TônicaSegundaTerça("4")
+     QuartaQuintaSexta("3")
+     SétimaTônicaSegunda("2")
+     TerçaQuartaQuinta("1")
+
+};
+
+function botãoSeteDesenhosDois() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosDoisc = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosDoisg = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosDoisd = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosDoisa = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosDoise = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosDoisb = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosDoisfs = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosDoisf = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosDoisbb = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosDoiseb = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosDoisab = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosDoisdb = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosDoisgb = document.getElementById(`setedesenhosdesenho2tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosDoisc.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosDoisg.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosDoisd.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosDoisa.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosDoise.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosDoisb.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosDoisfs.addEventListener('click', () => { CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosDoisf.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosDoisbb.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosDoiseb.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosDoisab.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosDoisdb.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosDoisgb.addEventListener('click', () => {  CriaSeteDesenhosDois(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+
+
+//função 7 desenhos 3
+
+function CriaSeteDesenhosTrês(tonica){
+
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosTrês();
+
+};
+
+function seteDesenhosTrês (){
+     
+     TerçaQuartaQuinta("6")
+     SextaSétimaTônica("5")
+     SegundaTerçaQuarta("4")
+     QuintaSextaSétima("3")
+     TônicaSegundaTerça("2")
+     QuartaQuintaSexta("1")
+
+};
+
+function botãoSeteDesenhosTrês() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosTrêsc = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosTrêsg = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosTrêsd = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosTrêsa = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosTrêse = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosTrêsb = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosTrêsfs = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosTrêsf = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosTrêsbb = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosTrêseb = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosTrêsab = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosTrêsdb = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosTrêsgb = document.getElementById(`setedesenhosdesenho3tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosTrêsc.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosTrêsg.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosTrêsd.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosTrêsa.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosTrêse.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosTrêsb.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosTrêsfs.addEventListener('click', () => { CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosTrêsf.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosTrêsbb.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosTrêseb.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosTrêsab.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosTrêsdb.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosTrêsgb.addEventListener('click', () => {  CriaSeteDesenhosTrês(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+
+
+//função 7 desenhos 4
+
+function CriaSeteDesenhosQuatro(tonica){
+
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosQuatro();
+
+};
+
+function seteDesenhosQuatro (){
+     
+     QuartaQuintaSexta("6")
+     SétimaTônicaSegunda("5")
+    TerçaQuartaQuinta("4")
+     SextaSétimaTônica("3")
+     SegundaTerçaQuarta("2")
+     QuintaSextaSétima("1")
+
+};
+
+function botãoSeteDesenhosQuatro() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosQuatroc = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosQuatrog = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosQuatrod = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosQuatroa = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosQuatroe = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosQuatrob = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosQuatrofs = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosQuatrof = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosQuatrobb = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosQuatroeb = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosQuatroab = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosQuatrodb = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosQuatrogb = document.getElementById(`setedesenhosdesenho4tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosQuatroc.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosQuatrog.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosQuatrod.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosQuatroa.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosQuatroe.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosQuatrob.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosQuatrofs.addEventListener('click', () => { CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosQuatrof.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosQuatrobb.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosQuatroeb.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosQuatroab.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosQuatrodb.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosQuatrogb.addEventListener('click', () => {  CriaSeteDesenhosQuatro(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+//função 7 desenhos 5
+
+function CriaSeteDesenhosCinco(tonica){
+
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosCinco();
+
+};
+
+function seteDesenhosCinco (){
+     
+     QuintaSextaSétima("6")
+     TônicaSegundaTerça("5")
+   QuartaQuintaSexta("4")
+     SétimaTônicaSegunda("3")
+     TerçaQuartaQuinta("2")
+     SextaSétimaTônica("1")
+
+};
+
+function botãoSeteDesenhosCinco() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosCincoc = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosCincog = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosCincod = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosCincoa = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosCincoe = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosCincob = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosCincofs = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosCincof = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosCincobb = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosCincoeb = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosCincoab = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosCincodb = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosCincogb = document.getElementById(`setedesenhosdesenho5tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosCincoc.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosCincog.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosCincod.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosCincoa.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosCincoe.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosCincob.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosCincofs.addEventListener('click', () => { CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosCincof.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosCincobb.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosCincoeb.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosCincoab.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosCincodb.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosCincogb.addEventListener('click', () => {  CriaSeteDesenhosCinco(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+
+//função 7 desenhos 6
+
+function CriaSeteDesenhosSeis(tonica){
+
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosSeis();
+
+};
+
+function seteDesenhosSeis (){
+     
+    SextaSétimaTônica("6")
+    SegundaTerçaQuarta("5")
+   QuintaSextaSétima("4")
+    TônicaSegundaTerça("3")
+     QuartaQuintaSexta("2")
+    SétimaTônicaSegunda("1")
+
+};
+
+function botãoSeteDesenhosSeis() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosSeisc = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosSeisg = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosSeisd = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosSeisa = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosSeise = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosSeisb = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosSeisfs = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosSeisf = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosSeisbb = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosSeiseb = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosSeisab = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosSeisdb = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosSeisgb = document.getElementById(`setedesenhosdesenho6tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosSeisc.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosSeisg.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosSeisd.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosSeisa.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosSeise.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosSeisb.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosSeisfs.addEventListener('click', () => { CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosSeisf.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosSeisbb.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosSeiseb.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosSeisab.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosSeisdb.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosSeisgb.addEventListener('click', () => {  CriaSeteDesenhosSeis(indicesDiatonicaEmQuartas[12]) })
+
+}
+
+
+//função 7 desenhos 7
+
+function CriaSeteDesenhosSete(tonica){
+
+ 
+     reset();
+     algoritmoDiatonica(tonica);
+     seteDesenhosSete();
+
+};
+
+function seteDesenhosSete (){
+     
+   SétimaTônicaSegunda("6")
+   TerçaQuartaQuinta("5")
+  SextaSétimaTônica("4")
+   SegundaTerçaQuarta("3")
+     QuintaSextaSétima("2")
+   TônicaSegundaTerça("1")
+
+};
+
+function botãoSeteDesenhosSete() {
+
+     //puxando botões CAGED Modelo C para desenvolver algoritmo 
+     var SeteDesenhosSetec = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[0]}`)
+     var SeteDesenhosSeteg = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[1]}`)
+     var SeteDesenhosSeted = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[2]}`)
+     var SeteDesenhosSetea = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[3]}`)
+     var SeteDesenhosSetee = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[4]}`)
+     var SeteDesenhosSeteb = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[5]}`)
+     var SeteDesenhosSetefs = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[6]}`)
+     var SeteDesenhosSetef = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[7]}`)
+     var SeteDesenhosSetebb = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[8]}`)
+     var SeteDesenhosSeteeb = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[9]}`)
+     var SeteDesenhosSeteab = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[10]}`)
+     var SeteDesenhosSetedb = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[11]}`)
+     var SeteDesenhosSetegb = document.getElementById(`setedesenhosdesenho7tom${classNameEscalaBotão[12]}`)
+
+
+      SeteDesenhosSetec.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[0]) })
+      SeteDesenhosSeteg.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[1]) })
+      SeteDesenhosSeted.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[2]) })
+      SeteDesenhosSetea.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[3]) })
+      SeteDesenhosSetee.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[4]) })
+      SeteDesenhosSeteb.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[5]) })
+      SeteDesenhosSetefs.addEventListener('click', () => { CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[6]) })
+      SeteDesenhosSetef.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[7]) })
+     SeteDesenhosSetebb.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[8]) })
+     SeteDesenhosSeteeb.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[9]) })
+     SeteDesenhosSeteab.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[10]) })
+     SeteDesenhosSetedb.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[11]) })
+     SeteDesenhosSetegb.addEventListener('click', () => {  CriaSeteDesenhosSete(indicesDiatonicaEmQuartas[12]) })
+
+}
 
 
 
@@ -989,6 +1392,19 @@ botãoCAGEDE();
 
 botãoCAGEDD();
 
+botãoSeteDesenhosUm();
+
+botãoSeteDesenhosDois();
+
+botãoSeteDesenhosTrês();
+
+botãoSeteDesenhosQuatro();
+
+botãoSeteDesenhosCinco();
+
+botãoSeteDesenhosSeis();
+
+botãoSeteDesenhosSete();
 
 
 
