@@ -155,6 +155,11 @@ function criaescala(tonica, corda) {
 
 }
 
+
+// FUNÇÕES DOS BOTÕES 
+
+
+
 /*função que define o argumento das funções de botão para os botões que chamam braço todo 
 ,por corda e duas cordas. */
 
@@ -309,6 +314,54 @@ function AtivaDuasCordas() {
 //functions com fragmentos de 3 ou 2 notas grau conjunto onde props é a corda 
 
 
+function TônicaSegundaTerça(props){
+     
+     for (i = 0; i < 9; i++) {
+          if (i > -1 & i < 3) {
+     
+               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               //console.log(acessanotas)
+     
+               //console.log(escaladesejadaArray[i]);
+     
+     
+     
+     
+               for (j = 0; j < acessanotas.length; j++) {
+     
+                    //console.log(acessanotas[j])
+     
+                    acessanotas[j].style.display = "block";
+               };
+          }
+     
+          };
+     
+};
+
+function SegundaTerçaQuarta(props){
+     for (i = 0; i < 9; i++) {
+     if (i > 0 & i < 4) {
+
+          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+          //console.log(acessanotas)
+
+          //console.log(escaladesejadaArray[i]);
+
+
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               //console.log(acessanotas[j])
+
+               acessanotas[j].style.display = "block";
+          };
+     }
+
+     };
+};
+
 
 function TerçaQuartaQuinta (props){
     
@@ -337,6 +390,60 @@ function TerçaQuartaQuinta (props){
 }
 };
 
+function QuartaQuintaSexta(props){
+     for (i = 0; i < 9; i++) {
+    
+          if (i > 2 & i < 6) {
+     
+               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               //console.log(acessanotas)
+     
+               //console.log(escaladesejadaArray[i]);
+     
+     
+     
+     
+               for (j = 0; j < acessanotas.length; j++) {
+     
+                    //console.log(acessanotas[j])
+     
+                    acessanotas[j].style.display = "block";
+               };
+     
+                  
+          };
+     
+     }
+
+};
+
+function QuintaSextaSétima(props){
+
+     for (i = 0; i < 9; i++) {
+    
+          if (i > 3 & i < 7) {
+     
+               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               //console.log(acessanotas)
+     
+               //console.log(escaladesejadaArray[i]);
+     
+     
+     
+     
+               for (j = 0; j < acessanotas.length; j++) {
+     
+                    //console.log(acessanotas[j])
+     
+                    acessanotas[j].style.display = "block";
+               };
+     
+                  
+          };
+     
+     }
+};
+
 function SextaSétimaTônica(props){
 
      for (i = 0; i < 9; i++) {
@@ -362,28 +469,28 @@ function SextaSétimaTônica(props){
 }
 };
 
-function SegundaTerçaQuarta(props){
+function SétimaTônicaSegunda(props){
      for (i = 0; i < 9; i++) {
-     if (i > 0 & i < 4) {
+
+     if (i > 5) {
+
+          if (i == 8) { i = 1 };
 
           acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
-          //console.log(acessanotas)
-
-          //console.log(escaladesejadaArray[i]);
-
-
 
 
           for (j = 0; j < acessanotas.length; j++) {
 
-               //console.log(acessanotas[j])
+               acessanotas[j].style.display = "block"
+          }
 
-               acessanotas[j].style.display = "block";
-          };
+          if (i == 1) { i = 8 }
+
      }
 
-     };
+}
 };
+
 
 function QuintaSexta(props){
      for (i = 0; i < 9; i++) {
@@ -415,34 +522,15 @@ function QuintaSexta(props){
      }
 };
 
-function SétimaTônicaSegunda(props){
-     for (i = 0; i < 9; i++) {
-
-     if (i > 5) {
-
-          if (i == 8) { i = 1 };
-
-          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
-
-
-          for (j = 0; j < acessanotas.length; j++) {
-
-               acessanotas[j].style.display = "block"
-          }
-
-          if (i == 1) { i = 8 }
-
-     }
-
-}
-};
 
 
 
 
 
 
-//functions CAGED EM CONTRUÇÃO 
+
+
+//functions CAGED 
 
 
 
@@ -866,6 +954,14 @@ function botãoCAGEDD() {
      cagedDgb.addEventListener('click', () => { criaCAGEDD(indicesDiatonicaEmQuartas[12]) })
 
 }
+
+
+
+
+
+//FUNÇÕES 7 DESENHOS 
+
+
 
 
 
