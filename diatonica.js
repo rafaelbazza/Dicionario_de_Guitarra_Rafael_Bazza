@@ -304,6 +304,144 @@ function AtivaDuasCordas() {
 
 
 
+
+
+//functions com fragmentos de 3 ou 2 notas grau conjunto onde props é a corda 
+
+
+
+function TerçaQuartaQuinta (props){
+    
+     for (i = 0; i < 9; i++) {
+    
+     if (i > 1 & i < 5) {
+
+          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+          //console.log(acessanotas)
+
+          //console.log(escaladesejadaArray[i]);
+
+
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               //console.log(acessanotas[j])
+
+               acessanotas[j].style.display = "block";
+          };
+
+             
+     };
+
+}
+};
+
+function SextaSétimaTônica(props){
+
+     for (i = 0; i < 9; i++) {
+
+     if (i > 4 & i < 8) {
+
+
+          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+          //console.log(acessanotas)
+
+          //console.log(escaladesejadaArray[i]);
+
+
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               //console.log(acessanotas[j])
+
+               acessanotas[j].style.display = "block";
+          };
+     };
+}
+};
+
+function SegundaTerçaQuarta(props){
+     for (i = 0; i < 9; i++) {
+     if (i > 0 & i < 4) {
+
+          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+          //console.log(acessanotas)
+
+          //console.log(escaladesejadaArray[i]);
+
+
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               //console.log(acessanotas[j])
+
+               acessanotas[j].style.display = "block";
+          };
+     }
+
+     };
+};
+
+function QuintaSexta(props){
+     for (i = 0; i < 9; i++) {
+     if (i > 3 & i < 6) {
+
+
+
+
+          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`)
+          //console.log(acessanotas)
+
+          //console.log(escaladesejadaArray[i])
+
+
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               //console.log(acessanotas[j])
+
+               acessanotas[j].style.display = "block"
+          }
+
+     }
+
+
+
+
+     }
+};
+
+function SétimaTônicaSegunda(props){
+     for (i = 0; i < 9; i++) {
+
+     if (i > 5) {
+
+          if (i == 8) { i = 1 };
+
+          acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+
+
+          for (j = 0; j < acessanotas.length; j++) {
+
+               acessanotas[j].style.display = "block"
+          }
+
+          if (i == 1) { i = 8 }
+
+     }
+
+}
+};
+
+
+
+
+
+
 //functions CAGED EM CONTRUÇÃO 
 
 
@@ -332,142 +470,30 @@ function MODELODEC() {
 
 
      //for que faz dentro do escopo da função aparecer as notas do CAGED
-     for (i = 0; i < 9; i++) {
+   
 
 
           //console.log(i);
           //console.log(escaladesejadaArray[i])
 
 
-          //if responsavel pela corda 6
+         //functions das cordas 
 
-          if (i > 1 & i < 5) {
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
-               //console.log(acessanotas)
+     TerçaQuartaQuinta("6")
 
-               //console.log(escaladesejadaArray[i]);
+     SextaSétimaTônica("5")
 
+     SegundaTerçaQuarta("4")
 
+     QuintaSexta("3")
+         
+     SétimaTônicaSegunda("2")
 
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-
-          // if responsavél pela corda 5
-
-          if (i > 4 & i < 8) {
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-          };
-
-          //if responsável pela corda 4
-
-
-          if (i > 0 & i < 4) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-          //if responsável pela corda 3
-
-          if (i > 3 & i < 6) {
-
-
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i])
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-
-
-
-
-          }
-
-          //if responsável pela corda 2
-
-          if (i > 5) {
-
-               if (i == 8) { i = 1 };
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-               if (i == 1) { i = 8 }
-
-          }
-
-          // if responsável pela corda 1
-          if (i > 1 & i < 5) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-          }
-     }
+     TerçaQuartaQuinta("1")
+         
+     
+   
 }
 
 //função que gera os botões para o CAGED MODELO DE C
@@ -533,145 +559,23 @@ function criaCAGEDA(tonica) {
 function MODELODEA() {
 
 
-     //for que faz dentro do escopo da função aparecer as notas do CAGED
-     for (i = 0; i < 9; i++) {
+     
 
 
-          console.log(i);
-          console.log(escaladesejadaArray[i])
 
 
-          //if responsavel pela corda 6
+       QuintaSexta("6")
 
-          if (i > 3 & i < 6) {
+       SétimaTônicaSegunda("5")
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
-               //console.log(acessanotas)
+       TerçaQuartaQuinta("4")
 
-               //console.log(escaladesejadaArray[i]);
+      SextaSétimaTônica("3")
 
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-
-          // if responsavél pela corda 5
-
-          if (i > 5 & i < 9) {
-
-                if(i==8){i=1}
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-               if(i==1){i=10}
-          };
-
-          //if responsável pela corda 4
-
-
-          if (i > 1 & i < 5) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-          //if responsável pela corda 3
-
-          if (i > 4 & i < 8) {
-
-
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i])
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-
-
-
-
-          }
-
-          //if responsável pela corda 2
-
-          if (i > 0 & i <4) {
-
-              
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-               
-
-          }
-
-          // if responsável pela corda 1
-          if (i > 3 & i < 6) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-          }
-     }
+       SegundaTerçaQuarta("2")
+       
+       QuintaSexta("1")
+    
 }
 
 //função que gera os botões para o CAGED MODELO DE A
@@ -739,145 +643,28 @@ function criaCAGEDG(tonica) {
 function MODELODEG() {
 
 
-     //for que faz dentro do escopo da função aparecer as notas do CAGED
-     for (i = 0; i < 9; i++) {
+  
 
 
           console.log(i);
           console.log(escaladesejadaArray[i])
 
+           SextaSétimaTônica("6")
+           
+           SegundaTerçaQuarta("5")
 
-          //if responsavel pela corda 6
+           QuintaSexta("4")
 
-          if (i > 4 & i < 8) {
+           SétimaTônicaSegunda("3")
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
-               //console.log(acessanotas)
+           TerçaQuartaQuinta("2")
 
-               //console.log(escaladesejadaArray[i]);
+           SextaSétimaTônica("1")
 
 
 
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-
-          // if responsavél pela corda 5
-
-          if (i > 0 & i < 4) {
-
-               
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-              
-          };
-
-          //if responsável pela corda 4
-
-
-          if (i > 3 & i < 6) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-          //if responsável pela corda 3
-
-          if (i > -1 & i < 3) {
-
-           if(i==2){i=6}
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i])
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-             if(i==6){i=2}
-
-
-
-          }
-
-          //if responsável pela corda 2
-
-          if (i > 1 & i <5) {
-
-              
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-               
-
-          }
-
-          // if responsável pela corda 1
-          if (i > 4 & i < 8) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-          }
-     }
+         
+     
 }
 
 //função que gera os botões para o CAGED MODELO DE G
@@ -941,145 +728,24 @@ function criaCAGEDE(tonica) {
 function MODELODEE() {
 
 
-     //for que faz dentro do escopo da função aparecer as notas do CAGED
-     for (i = 0; i < 9; i++) {
+  
 
 
-          console.log(i);
-          console.log(escaladesejadaArray[i])
+      
+         SétimaTônicaSegunda("6")
 
+         TerçaQuartaQuinta("5")
 
-          //if responsavel pela corda 6
+         SextaSétimaTônica("4")
 
-          if (i > -1 & i < 3) {
-              if(i==2){i=6}
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
-               //console.log(acessanotas)
+         SegundaTerçaQuarta("3")
 
-               //console.log(escaladesejadaArray[i]);
+         QuintaSexta("2")
 
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-               if(i==6){i=2}
-          };
-
-
-
-          // if responsavél pela corda 5
-
-          if (i > 1 & i < 5) {
-
-               
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-              
-          };
-
-          //if responsável pela corda 4
-
-
-          if (i > 4 & i < 8) {
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-
-          };
-
-
-          //if responsável pela corda 3
-
-          if (i > 0 & i < 4) {
+         SétimaTônicaSegunda("1")
 
          
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i])
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-           
-
-
-
-          }
-
-          //if responsável pela corda 2
-
-          if (i > 3 & i <6) {
-
-              
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-               
-
-          }
-
-          // if responsável pela corda 1
-          if (i > -1 & i < 3) {
-               if(i==2){i=6}
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-               if(i==6){i=2}
-
-          }
-     }
+   
 }
 
 //função que gera os botões para o CAGED MODELO DE E
@@ -1147,144 +813,23 @@ function criaCAGEDD(tonica) {
 function MODELODED() {
 
 
-     //for que faz dentro do escopo da função aparecer as notas do CAGED
-     for (i = 0; i < 9; i++) {
+   
 
+    
 
-          console.log(i);
-          console.log(escaladesejadaArray[i])
+          SegundaTerçaQuarta("6")
 
+          QuintaSexta("5")
 
-          //if responsavel pela corda 6
+          SétimaTônicaSegunda("4")
 
-          if (i > 0 & i < 4) {
-             
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 6`);
-               //console.log(acessanotas)
+          TerçaQuartaQuinta("3")
 
-               //console.log(escaladesejadaArray[i]);
+          SextaSétimaTônica("2")
 
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-          };
-
-
-
-          // if responsavél pela corda 5
-
-          if (i > 3 & i < 6) {
-
-               
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 5`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-              
-          };
-
-          //if responsável pela corda 4
-
-
-          if (i >-1 & i < 3) {
-             if(i==2){i=6}
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 4`);
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i]);
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block";
-               };
-
-               if(i==6){i=2}
-          };
-
-
-          //if responsável pela corda 3
-
-          if (i > 1 & i < 5) {
-
-         
-
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 3`)
-               //console.log(acessanotas)
-
-               //console.log(escaladesejadaArray[i])
-
-
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    //console.log(acessanotas[j])
-
-                    acessanotas[j].style.display = "block"
-               }
-
-
-           
-
-
-
-          }
-
-          //if responsável pela corda 2
-
-          if (i > 4 & i <8) {
-
-              
-
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 2`);
-
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-
-               
-
-          }
-
-          // if responsável pela corda 1
-          if (i > 0 & i < 4) {
-           
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} 1`);
-
-               for (j = 0; j < acessanotas.length; j++) {
-
-                    acessanotas[j].style.display = "block"
-               }
-            
-
-          }
-     }
+          SegundaTerçaQuarta("1")
+          
+    
 }
 
 //função que gera os botões para o CAGED MODELO DE D
