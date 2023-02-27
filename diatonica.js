@@ -4,11 +4,29 @@ const classNameEscalaBotão = ['c', 'g', 'd', 'a', 'e', 'b', 'fs', 'f', 'bb', 'e
 const indicesDiatonicaEmQuartas = [0, 11, 3, 14, 6, 17, 9, 8, 16, 5, 13, 2, 10];
 const CAGED = ['C', 'G', 'A', 'D', 'E']
 
+const C = indicesDiatonicaEmQuartas[0];
+const G = indicesDiatonicaEmQuartas[1];
+const D  = indicesDiatonicaEmQuartas[2];
+const A = indicesDiatonicaEmQuartas[3];
+const E = indicesDiatonicaEmQuartas[4];
+const B = indicesDiatonicaEmQuartas[5];
+const Fs = indicesDiatonicaEmQuartas[6];
+const F = indicesDiatonicaEmQuartas[7];
+const Bb = indicesDiatonicaEmQuartas[8];
+const Eb = indicesDiatonicaEmQuartas[9];
+const Ab = indicesDiatonicaEmQuartas[10];
+const Db = indicesDiatonicaEmQuartas[11];
+const Gb = indicesDiatonicaEmQuartas[12];
+
+
+
+
+
 //variaveis da criação das esalas e acordes
 
 var diatonica = [];
 
-var triadeMaior = [];
+var triade = [];
 
 var distanciasdiatonica = "TTSTTTS"
 
@@ -20,9 +38,9 @@ var cromatica = stringcromatica.split(",");
 
 //console.log(cromatica)
 
-var escaladesejadaArray = [];
+var elementodesejadoArray = [];
 
-var triadeDesejada = [];
+
 
 
 // function responsavél por apagar todas as notas do braço
@@ -49,9 +67,9 @@ function iniciaDiatonica() {
      }
 };
 
-function iniciaTriadeMaior() {
+function iniciaTriade() {
      for (i = 0; i < distanciastriade.length; i++) {
-          triadeMaior.push(distanciastriade[i])
+          triade.push(distanciastriade[i])
      };
 }
 
@@ -103,7 +121,7 @@ function algoritmoDiatonica(tonica) {
      }
 
      //transforma a estring gerada no ultimo for, em array.
-     escaladesejadaArray = escaladesejada.split(",");
+     elementodesejadoArray = escaladesejada.split(",");
 
 
 
@@ -120,12 +138,12 @@ function algoritmotriadeMaior(tonica) {
 
 
      //for responsavel por inserir a cromatica para cada tonalidade a depender do parametro 
-     for (i = 0; i < triadeMaior.length; i++) {
+     for (i = 0; i < triade.length; i++) {
 
 
           //condicional da tonica  
 
-          if (triadeMaior[i] == "1") {
+          if (triade[i] == "1") {
 
                if (j < 13) { j = j + 6 }
                else {
@@ -136,7 +154,7 @@ function algoritmotriadeMaior(tonica) {
 
           //condicional da terça 
 
-          if (triadeMaior[i] == "3") {
+          if (triade[i] == "3") {
 
                if (j < 14) { j = j + 5; }
                else {
@@ -147,7 +165,7 @@ function algoritmotriadeMaior(tonica) {
 
       //condicional da quinta 
 
-               if (triadeMaior[i] == "5") {
+               if (triade[i] == "5") {
 
                     if (j < 11) { j = j + 8; }
                     else {
@@ -161,12 +179,126 @@ function algoritmotriadeMaior(tonica) {
                triadeDesejada = triadeDesejada + "," + cromatica[j];
 
              
-
+             
 
           }
+
+
+          elementodesejadoArray = triadeDesejada.split(",");
+          
+        
           
      }
      ;
+
+     //algoritmo triade menor
+
+     function algoritmotriadeMenor(tonica) {
+
+          //variaveis em que parametro é o numero do indice da nota da escala cromatica que inicia a função. 
+          let j = tonica
+          var triadeDesejada = [cromatica[j]];
+     
+     
+          //for responsavel por inserir a cromatica para cada tonalidade a depender do parametro 
+          for (i = 0; i < triade.length; i++) {
+     
+     
+               //condicional da tonica  
+     
+               if (triade[i] == "1") {
+     
+                    if (j < 14) { j = j + 5 }
+                    else {
+                           if (j >= 14) { j = j -14 }
+                        
+                    }
+               }
+     
+               //condicional da terça 
+     
+               if (triade[i] == "3") {
+     
+                    if (j < 13) { j = j + 6; }
+                    else {
+                         if (j >= 13) { j = j - 13 }
+                        
+                    }
+               }
+     
+           //condicional da quinta 
+     
+                    if (triade[i] == "5") {
+     
+                         if (j < 11) { j = j + 8; }
+                         else {
+                              if (j >= 11) { j = j - 11 }
+                             }
+                         }
+     
+                    //cria string da escala chamada no parametro na variavel escaladesejada 
+                    //dentro do escopo do for da diatonica 
+     
+                    triadeDesejada = triadeDesejada + "," + cromatica[j];
+     
+                  
+                  
+     
+               }
+     
+     
+               elementodesejadoArray = triadeDesejada.split(",");
+               
+             
+               
+          }
+ 
+
+//function acorde desejado para mostrar o acorde no instrumento 
+
+function mostraTriade (){
+     for(i=0; i<triadedesejadaArray.length; i++){
+
+
+          console.log(i)
+          var acessanotas = document.getElementsByClassName(`${triadedesejadaArray[i]}`)
+
+          for(j=0; j<acessanotas.length; j++){
+
+               acessanotas[j].style.display = "block"
+          }
+          
+
+          }
+
+     
+
+
+
+}
+
+
+function criaTriadeMaior(tonica, corda){
+
+     if (corda == undefined) { corda = "" }
+
+     reset()
+     algoritmotriadeMaior(tonica);
+     mostraElemento(corda);
+}
+
+function criaTriadeMenor(tonica, corda){
+
+     if (corda == undefined) { corda = "" }
+
+     reset()
+     algoritmotriadeMenor(tonica);
+     mostraElemento(corda);
+
+
+}
+
+
 
 
  
@@ -177,16 +309,16 @@ function algoritmotriadeMaior(tonica) {
 
 // função que mostra a escala braço todo, escala por corda e escala duas cordas 
 
-function mostraEscala(corda) {
+function mostraElemento(corda) {
 
      //for que faz dentro do escopo da função aparecer as notas   
-     for (i = 0; i < escaladesejadaArray.length; i++) {
+     for (i = 0; i < elementodesejadoArray.length; i++) {
 
 
           //console.log(i)
           //console.log(escaladesejadaArray[i])
 
-          var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]}  ${corda} `)
+          var acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]}  ${corda} `)
           //console.log(acessanotas)
 
          // console.log(`${escaladesejadaArray[i]} ${corda} `)
@@ -222,7 +354,7 @@ function criaescala(tonica, corda) {
 
 
 
-     mostraEscala(corda)
+     mostraElemento(corda)
 
 
 
@@ -393,7 +525,7 @@ function TônicaSegundaTerça(props) {
      for (i = 0; i < 9; i++) {
           if (i > -1 & i < 3) {
 
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -417,7 +549,7 @@ function SegundaTerçaQuarta(props) {
      for (i = 0; i < 9; i++) {
           if (i > 0 & i < 4) {
 
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -443,7 +575,7 @@ function TerçaQuartaQuinta(props) {
 
           if (i > 1 & i < 5) {
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               var acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -469,7 +601,7 @@ function QuartaQuintaSexta(props) {
 
           if (i > 2 & i < 6) {
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               var acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -497,7 +629,7 @@ function QuintaSextaSétima(props) {
 
           if (i > 3 & i < 7) {
 
-               var acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               var acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -525,7 +657,7 @@ function SextaSétimaTônica(props) {
           if (i > 4 & i < 8) {
 
 
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i]);
@@ -551,7 +683,7 @@ function SétimaTônicaSegunda(props) {
 
                if (i == 8) { i = 1 };
 
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`);
+               acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`);
 
 
                for (j = 0; j < acessanotas.length; j++) {
@@ -578,7 +710,7 @@ function QuintaSexta(props) {
 
 
 
-               acessanotas = document.getElementsByClassName(`${escaladesejadaArray[i]} ${props}`)
+               acessanotas = document.getElementsByClassName(`${elementodesejadoArray[i]} ${props}`)
                //console.log(acessanotas)
 
                //console.log(escaladesejadaArray[i])
@@ -1455,7 +1587,7 @@ function botãoSeteDesenhosSete() {
 
 iniciaDiatonica();
 
-iniciaTriadeMaior();
+iniciaTriade();
 
 botõesBraçoTodo();
 
@@ -1487,21 +1619,8 @@ botãoSeteDesenhosSeis();
 
 botãoSeteDesenhosSete();
 
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[0])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[1])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[2])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[3])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[4])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[5])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[6])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[7])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[8])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[9])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[10])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[11])
-algoritmotriadeMaior(indicesDiatonicaEmQuartas[12])
 
 
 
 
-console.log(cromatica)
+criaTriadeMenor(Db)
