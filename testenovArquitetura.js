@@ -654,6 +654,10 @@ function setimaMaior(tonica) {
 }
 
 
+
+
+
+
 //escalas
 
 function diatonica(tonica){
@@ -693,16 +697,408 @@ function diatonica(tonica){
 
 };
 
+function pentatonica(tonica){
 
+    reset();
 
-//acordes
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+    //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+     
+
+  
+
+};
+
+function pentaBlues(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+
+         //intervalo 
+         terçaMenor(tonica);
+         //mostra intervalo
+        mostraElemento(elementodesejadoArray);
+
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+    //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+     
+
+  
+
+};
+
+function menorHarmonica(tonica){
+    reset()
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    segundaMaior(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    terçaMenor(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    sextaMenor(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray)
+}
+
+function menorMelodica(tonica){
+    reset()
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    segundaMaior(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    terçaMenor(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray)
+}
+
+function escalaDiminuta(tonica){
+
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quartaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaDiminuta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    sextaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    sextaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+function tonsInteiros(tonica){
+   
+    reset()
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quartaAumentada(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaAumentada(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+}
+
+//triades
 
 function triadeMaior(tonica){
 
     reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
     terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
     quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
 }
+
+function triadeAumentada(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaAumentada(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+function triadeMenor(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+function triadeDiminuta(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaDiminuta(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//tetrades
+
+//maj7
+
+function tetradeMaiorcomSetimaMaior(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//maj7#5
+function tetradeMaiorcomSetimaMaioreQuintaAumentada(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaAumentada(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//7
+
+function tetradeMaiorcomSetimaMenor(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//6
+
+function tetradeMaiorcomSexta(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    sextaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//mMaj7
+
+function tetradeMenorcomSetimaMaior(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//m7
+
+function tetradeMenorcomSetimaMenor(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//m6
+
+function tetradeMenorcomSexta(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    sextaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//m7b5
+function tetradeMeioDiminuta(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaDiminuta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    setimaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+//dim
+
+function tetradeDiminuta(tonica){
+
+    reset();
+    
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    quintaDiminuta(tonica);
+    mostraElemento(elementodesejadoArray);
+
+    sextaMaior(tonica);
+    mostraElemento(elementodesejadoArray);
+}
+
+
+
+
+
+
+
+
 
 
 //CAGED DIATONICA
@@ -793,7 +1189,7 @@ function diatonicaCAGEDA(tonica){
 
 
 //testes das funções 
-
+/*
 setimaMenor(C);
 setimaMenor(Cs);
 setimaMenor(Db);
@@ -813,4 +1209,4 @@ setimaMenor(As);
 setimaMenor(Bb);
 setimaMenor(B);
 setimaMenor(Bs);
-setimaMenor(Cb);
+setimaMenor(Cb);*/
