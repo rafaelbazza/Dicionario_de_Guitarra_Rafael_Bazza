@@ -1623,4 +1623,4 @@ botãoSeteDesenhosSete();
 
 
 
-criaTriadeMenor(Db)
+
