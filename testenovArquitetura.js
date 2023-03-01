@@ -82,12 +82,14 @@ function resettodasmenosUm(){
 
 //loop para mostrar notas do algoritmo do intervalo 
 
-function mostraElemento(notas){
+function mostraElemento(notas , corda){
+
+    if(corda == undefined){ corda = ""}
     
     for(i=0; i<notas.length;i++){
     
     
-        var acessanotas = document.getElementsByClassName(`${notas[i]}`)
+        var acessanotas = document.getElementsByClassName(`${notas[i]}  ${corda}`)
     
        for(l=0;l<acessanotas.length;l++){
     
@@ -98,14 +100,29 @@ function mostraElemento(notas){
 
 //aloritmos para os intervalos
 
+function Fundamental(tonica){
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    
+
+
+
+    elementodesejadoArray = intervalo.split(",");
+
+    //console.log(elementodesejadoArray)
+   
+
+
+}
+
 function segundaMenor(tonica) {
 
     let j = tonica;
     var intervalo = cromatica[j];
 
     for (i = 0; i < 2; i++) {
-
-        if (i = 0) { j = j };
 
 
 
@@ -124,7 +141,7 @@ function segundaMenor(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -134,7 +151,7 @@ function segundaMenor(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
+   
 
 }
 
@@ -145,8 +162,6 @@ function segundaMaior(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
-
         if (i = 1) {
 
             if (j < 28) { j = j + 5 } 
@@ -155,7 +170,7 @@ function segundaMaior(tonica) {
 }
  }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -168,7 +183,7 @@ function segundaMaior(tonica) {
     //for responsavel por jogar a escala pro braço 
 
 
-mostraElemento(elementodesejadoArray);
+
     
 
 }
@@ -180,7 +195,7 @@ function terçaMenor(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
+        
 
 
 
@@ -199,7 +214,7 @@ function terçaMenor(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -209,7 +224,7 @@ function terçaMenor(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
+   
 }
 
 function terçaMaior(tonica) {
@@ -219,11 +234,7 @@ function terçaMaior(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
-
-
-
-
+        
         if (i = 1) {
 
 
@@ -238,7 +249,7 @@ function terçaMaior(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -248,7 +259,7 @@ function terçaMaior(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
+ 
 
   
 }
@@ -260,7 +271,7 @@ function quartaJusta(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
+       
 
 
 
@@ -279,7 +290,7 @@ function quartaJusta(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -289,11 +300,101 @@ function quartaJusta(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
+   
     
  
   
 }
+
+function quartaAumentada(tonica) {
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+     
+
+
+
+
+        if (i = 1) {
+
+
+            if (j < 15) { j = j + 15 } 
+            else {
+
+
+                if (j == 15) { j = j - 15 }
+                else{
+
+                    if(j>15){j = j - 18}
+
+
+
+                }
+
+
+            }
+
+        }
+
+        intervalo =   cromatica[j];
+
+
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+    console.log(intervalo)
+   
+    
+ 
+  
+}
+
+function quintaDiminuta(tonica) {
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+     
+
+
+
+
+        if (i = 1) {
+
+
+            if (j < 15) { j = j + 18 }else{
+           
+            if(j>=15){j = j -15}
+
+            }
+                
+
+        }
+
+        intervalo =   cromatica[j];
+
+
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+   
+   //console.log(intervalo)
+    
+ 
+  
+}
+
 
 function quintaJusta(tonica) {
 
@@ -302,7 +403,7 @@ function quintaJusta(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
+        
 
 
 
@@ -321,7 +422,7 @@ function quintaJusta(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo = cromatica[j];
 
 
 
@@ -331,12 +432,104 @@ function quintaJusta(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
+   
     
   
   
 }
 
+function quintaAumentada(tonica) {
+
+   
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+        
+
+
+
+
+        if (i = 1) {
+
+            
+            if (j < 11) { j = j + 20 } 
+            else {
+
+
+                if (j == 11) { j = 1 }else{
+                    if(j>13 & j<30){j=j-13}else{
+
+                        if(j==30){j=20}else{
+                            if(j==32)(j=19)
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        intervalo =  cromatica[j];
+
+
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+    //console.log(elementodesejadoArray)
+    //console.log(intervalo)
+    
+  
+  
+}
+
+function sextaMenor(tonica) {
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+       
+
+
+
+
+        if (i = 1) {
+
+
+            if (j < 10) { j = j + 23 } 
+            else {
+
+
+                if (j >= 10) { j = j - 10 }
+
+
+            }
+
+        }
+
+        intervalo =  cromatica[j];
+
+        
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+    //console.log(elementodesejadoArray)
+      //console.log(intervalo)
+    
+
+  
+}
 
 function sextaMaior(tonica) {
 
@@ -345,7 +538,7 @@ function sextaMaior(tonica) {
 
     for (i = 0; i < 2; i++) {
 
-        if (i = 0) { j = j };
+       
 
 
 
@@ -364,6 +557,47 @@ function sextaMaior(tonica) {
 
         }
 
+        intervalo =  cromatica[j];
+
+
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+    //console.log(elementodesejadoArray)
+  
+    
+
+  
+}
+function setimaMenor(tonica) {
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+       
+
+
+
+
+        if (i = 1) {
+
+
+            if (j < 5) { j = j + 28 } 
+            else {
+
+
+                if (j >= 5) { j = j - 5 }
+
+
+            }
+
+        }
+
         intervalo = intervalo + "," + cromatica[j];
 
 
@@ -374,22 +608,184 @@ function sextaMaior(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
     //console.log(elementodesejadoArray)
-    mostraElemento(elementodesejadoArray);
-    
-  reset();
-  console.log(elementodesejadoArray);
+    // console.log(intervalo)
+ 
+  
+}
+function setimaMaior(tonica) {
+
+    let j = tonica;
+    var intervalo = cromatica[j];
+
+    for (i = 0; i < 2; i++) {
+
+       
+
+
+
+
+        if (i = 1) {
+
+
+            if (j < 4) { j = j + 29 } 
+            else {
+
+
+                if (j >= 4) { j = j - 4 }
+
+
+            }
+
+        }
+
+        intervalo =  cromatica[j];
+
+
+
+
+    }
+
+    elementodesejadoArray = intervalo.split(",");
+
+    //console.log(elementodesejadoArray)
+
+ 
   
 }
 
 
+//escalas
+
+function diatonica(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray);
+
+  
+
+};
 
 
 
+//acordes
+
+function triadeMaior(tonica){
+
+    reset();
+    terçaMaior(tonica);
+    quintaJusta(tonica);
+}
+
+
+//CAGED DIATONICA
+
+function diatonicaCAGEDC(tonica){
+
+     reset();
+
+     Fundamental(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+
+     segundaMaior(tonica);
+     mostraElemento(elementodesejadoArray, 4 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+     terçaMaior(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 4)
+     mostraElemento(elementodesejadoArray , 1)
+
+     quartaJusta(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 4)
+     mostraElemento(elementodesejadoArray , 1)
+
+     quintaJusta(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 3)
+     mostraElemento(elementodesejadoArray , 1)
+
+     sextaMaior(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 3 )
+
+     setimaMaior(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+};
+
+function diatonicaCAGEDA(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 1)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray , 1)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+};
 
 
 
-
-
+//diatonicaCAGEDA(C)
 
 
 
@@ -398,23 +794,23 @@ function sextaMaior(tonica) {
 
 //testes das funções 
 
-sextaMaior(C);
-sextaMaior(Cs);
-sextaMaior(Db);
-sextaMaior(D);
-sextaMaior(Ds);
-sextaMaior(Eb);
-sextaMaior(E);
-sextaMaior(Es);
-sextaMaior(F);
-sextaMaior(Fs);
-sextaMaior(Gb);
-sextaMaior(G);
-sextaMaior(Gs);
-sextaMaior(Ab);
-sextaMaior(A);
-sextaMaior(As);
-sextaMaior(Bb);
-sextaMaior(B);
-sextaMaior(Bs);
-sextaMaior(Cb);
+setimaMenor(C);
+setimaMenor(Cs);
+setimaMenor(Db);
+setimaMenor(D);
+setimaMenor(Ds);
+setimaMenor(Eb);
+setimaMenor(E);
+setimaMenor(Es);
+setimaMenor(F);
+setimaMenor(Fs);
+setimaMenor(Gb);
+setimaMenor(G);
+setimaMenor(Gs);
+setimaMenor(Ab);
+setimaMenor(A);
+setimaMenor(As);
+setimaMenor(Bb);
+setimaMenor(B);
+setimaMenor(Bs);
+setimaMenor(Cb);
