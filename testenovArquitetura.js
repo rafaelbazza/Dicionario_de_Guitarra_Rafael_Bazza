@@ -660,6 +660,9 @@ function setimaMaior(tonica) {
 
 //escalas
 
+
+//diatonica
+
 function diatonica(tonica){
 
     reset();
@@ -696,6 +699,931 @@ function diatonica(tonica){
   
 
 };
+
+//diatonica por corda 
+
+function diatonicaCordaUm(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+
+  
+
+};
+
+function diatonicaCordaDois(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 2);
+
+  
+
+};
+
+function diatonicaCordaTres(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+
+  
+
+};
+
+function diatonicaCordaQuatro(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 4);
+
+  
+
+};
+
+function diatonicaCordaCinco(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+
+  
+
+};
+
+function diatonicaCordaSeis(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 6);
+
+  
+
+};
+
+
+//diatonica duas cordas
+
+function diatonicaCordaUmDois(tonica){
+   
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 1);
+    mostraElemento(elementodesejadoArray, 2);
+    
+}
+
+function diatonicaCordaDoisTres(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 2);
+
+}
+
+function diatonicaCordaTresQuatro(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 3);
+    mostraElemento(elementodesejadoArray, 4);
+
+
+}
+
+function diatonicaCordaQuatroCinco(tonica){
+
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 4);
+
+}
+
+function diatonicaCordaCincoSeis(tonica){
+
+    
+    reset();
+
+    //intervalo
+    Fundamental(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+    //intervalo  
+    segundaMaior(tonica);
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    terçaMaior(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    quartaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    quintaJusta(tonica);
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    sextaMaior(tonica); 
+    //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+      //intervalo 
+    setimaMaior(tonica); 
+     //mostra intervalo
+    mostraElemento(elementodesejadoArray, 5);
+    mostraElemento(elementodesejadoArray, 6);
+
+}
+
+
+
+
+//CAGED DIATONICA
+
+function diatonicaCAGEDC(tonica){
+
+     reset();
+
+     Fundamental(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+
+     segundaMaior(tonica);
+     mostraElemento(elementodesejadoArray, 4 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+     terçaMaior(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 4)
+     mostraElemento(elementodesejadoArray , 1)
+
+     quartaJusta(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 4)
+     mostraElemento(elementodesejadoArray , 1)
+
+     quintaJusta(tonica)
+     mostraElemento(elementodesejadoArray , 6)
+     mostraElemento(elementodesejadoArray, 3)
+     mostraElemento(elementodesejadoArray , 1)
+
+     sextaMaior(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 3 )
+
+     setimaMaior(tonica)
+     mostraElemento(elementodesejadoArray, 5 )
+     mostraElemento(elementodesejadoArray, 2 )
+
+};
+
+function diatonicaCAGEDA(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 1)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray , 1)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+};
+
+
+function diatonicaCAGEDG(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray , 1)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+};
+
+function diatonicaCAGEDE(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 1 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray , 2)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+};
+
+function diatonicaCAGEDD(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+     mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 1 )
+    mostraElemento(elementodesejadoArray, 4 )
+
+    terçaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray , 2)
+
+    setimaMaior(tonica)
+   
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+};
+
+
+//sete desenhos
+
+function diatonicaSetedesenhosUm(tonica){
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 1 )
+    mostraElemento(elementodesejadoArray, 4 )
+
+    terçaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray , 2)
+
+    setimaMaior(tonica)
+   
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+}
+function diatonicaSetedesenhosDois(tonica){
+    
+    reset();
+
+    Fundamental(tonica)
+     mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 2 )
+    mostraElemento(elementodesejadoArray, 4 )
+
+    terçaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray , 4)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray , 3)
+
+    setimaMaior(tonica)
+   
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 2 )
+}
+
+function diatonicaSetedesenhosTres(tonica){
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+    terçaMaior(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+}
+
+
+function diatonicaSetedesenhosQuatro(tonica){
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+    terçaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray , 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 1)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+}
+
+function diatonicaSetedesenhosCinco(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray , 1)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+}
+
+function diatonicaSetedesenhosSeis(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5 )
+    mostraElemento(elementodesejadoArray, 3 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray , 2)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray , 2)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+}
+
+
+function diatonicaSetedesenhosSete(tonica){
+
+    reset();
+
+    Fundamental(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 1 )
+
+
+    segundaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 1 )
+    mostraElemento(elementodesejadoArray, 3 )
+
+    terçaMaior(tonica)
+    
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+    mostraElemento(elementodesejadoArray , 1)
+
+    quartaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 3)
+
+    quintaJusta(tonica)
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray , 2)
+
+    sextaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray , 2)
+
+    setimaMaior(tonica)
+    mostraElemento(elementodesejadoArray, 6 )
+    mostraElemento(elementodesejadoArray, 4 )
+    mostraElemento(elementodesejadoArray, 2 )
+
+   
+
+}
+
+
+
+
+
+//penta
 
 function pentatonica(tonica){
 
@@ -1093,96 +2021,155 @@ function tetradeDiminuta(tonica){
 }
 
 
+//Acordes Caged 
 
-
-
-
-
-
-
-
-//CAGED DIATONICA
-
-function diatonicaCAGEDC(tonica){
+function triadeMaiorCAGEDC(tonica){
 
      reset();
 
-     Fundamental(tonica)
-     mostraElemento(elementodesejadoArray, 5 )
-     mostraElemento(elementodesejadoArray, 2 )
+     Fundamental(tonica);
+     mostraElemento(elementodesejadoArray, 5)
+     mostraElemento(elementodesejadoArray, 2)
 
-
-     segundaMaior(tonica);
-     mostraElemento(elementodesejadoArray, 4 )
-     mostraElemento(elementodesejadoArray, 2 )
-
-     terçaMaior(tonica)
-     mostraElemento(elementodesejadoArray , 6)
+     terçaMaior(tonica);
      mostraElemento(elementodesejadoArray, 4)
-     mostraElemento(elementodesejadoArray , 1)
+     mostraElemento(elementodesejadoArray, 1)
 
-     quartaJusta(tonica)
-     mostraElemento(elementodesejadoArray , 6)
-     mostraElemento(elementodesejadoArray, 4)
-     mostraElemento(elementodesejadoArray , 1)
-
-     quintaJusta(tonica)
-     mostraElemento(elementodesejadoArray , 6)
+     quintaJusta(tonica);
      mostraElemento(elementodesejadoArray, 3)
-     mostraElemento(elementodesejadoArray , 1)
 
-     sextaMaior(tonica)
-     mostraElemento(elementodesejadoArray, 5 )
-     mostraElemento(elementodesejadoArray, 3 )
-
-     setimaMaior(tonica)
-     mostraElemento(elementodesejadoArray, 5 )
-     mostraElemento(elementodesejadoArray, 2 )
-
-};
-
-function diatonicaCAGEDA(tonica){
+}
+function triadeMaiorCAGEDA(tonica){
 
     reset();
 
-    Fundamental(tonica)
-    mostraElemento(elementodesejadoArray, 5 )
-    mostraElemento(elementodesejadoArray, 3 )
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray, 3)
+   
 
+    terçaMaior(tonica);
+   
+    mostraElemento(elementodesejadoArray, 2)
 
-    segundaMaior(tonica);
-    mostraElemento(elementodesejadoArray, 5 )
-    mostraElemento(elementodesejadoArray, 2 )
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray, 1)
 
-    terçaMaior(tonica)
+}
+
+function triadeMaiorCAGEDG(tonica){
+
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray, 3)
+    mostraElemento(elementodesejadoArray, 1)
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray, 2)
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 4)
+
+}
+
+function triadeMaiorCAGEDE(tonica){
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 6)
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray, 1)
+
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 3)
+   
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray, 2)
     
+}
+
+function triadeMaiorCAGEDD(tonica){
+    reset();
+
+    Fundamental(tonica);
     mostraElemento(elementodesejadoArray, 4)
-    mostraElemento(elementodesejadoArray , 2)
+    mostraElemento(elementodesejadoArray, 2)
 
-    quartaJusta(tonica)
+    terçaMaior(tonica);
+    mostraElemento(elementodesejadoArray, 1)
+   
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 3)
+   
+    
+}
+
+
+
+
+function triadeMenorCAGEDA(tonica){
+
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray, 3)
+   
+
+    terçaMenor(tonica);
+   
+    mostraElemento(elementodesejadoArray, 2)
+
+    quintaJusta(tonica);
     mostraElemento(elementodesejadoArray, 4)
-    mostraElemento(elementodesejadoArray , 2)
+    mostraElemento(elementodesejadoArray, 1)
 
-    quintaJusta(tonica)
-    mostraElemento(elementodesejadoArray , 6)
+}
+
+function triadeMenorCAGEDE(tonica){
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 6)
     mostraElemento(elementodesejadoArray, 4)
-    mostraElemento(elementodesejadoArray , 1)
+    mostraElemento(elementodesejadoArray, 1)
 
-    sextaMaior(tonica)
-    mostraElemento(elementodesejadoArray, 6 )
-    mostraElemento(elementodesejadoArray, 3 )
-    mostraElemento(elementodesejadoArray , 1)
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray, 3)
+   
 
-    setimaMaior(tonica)
-    mostraElemento(elementodesejadoArray, 5 )
-    mostraElemento(elementodesejadoArray, 3 )
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 5)
+    mostraElemento(elementodesejadoArray, 2)
+    
+}
 
-};
+function triadeMenorCAGEDD(tonica){
+    reset();
+
+    Fundamental(tonica);
+    mostraElemento(elementodesejadoArray, 4)
+    mostraElemento(elementodesejadoArray, 2)
+
+    terçaMenor(tonica);
+    mostraElemento(elementodesejadoArray, 1)
+   
+
+    quintaJusta(tonica);
+    mostraElemento(elementodesejadoArray, 3)
+   
+    
+}
 
 
-
-//diatonicaCAGEDA(C)
-
+triadeMenorCAGEDD(D)
 
 
 
