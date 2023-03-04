@@ -2169,7 +2169,7 @@ function triadeMenorCAGEDD(tonica){
 }
 
 
-triadeMenorCAGEDD(D)
+
 
 
 
