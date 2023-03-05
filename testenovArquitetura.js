@@ -2168,10 +2168,16 @@ function triadeMenorCAGEDD(tonica){
     
 }
 
+function teste(){
 
+var acessanotas = document.getElementsByClassName("bb")
 
+for(j=0;j<acessanotas.length;j++){
 
+acessanotas[j].style.display = "block"
 
+}
+}
 
 
 
