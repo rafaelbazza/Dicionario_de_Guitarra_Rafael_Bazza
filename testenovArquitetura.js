@@ -2170,58 +2170,33 @@ function triadeMenorCAGEDD(tonica){
 
 function teste(){
 
-var acessanotas = document.getElementsByClassName("bb 4")
+var acessanotas = document.getElementsByClassName("B s")
 
 for(j=0;j<acessanotas.length;j++){
 
 acessanotas[j].style.display = "block"
+console.log(acessanotas)
 
 }
-var acessanotass = document.getElementsByClassName("F b 4")
+
+
+
+var acessanotass = document.getElementsByClassName("D ss")
   
     for(k=0;k<acessanotass.length;k++){
     
     acessanotass[k].style.display = "block"
+    console.log(acessanotas)
    
-       console.log(acessanotass)
+      
 }
-}
-function teste2(){
-
-  var acessanotas = document.getElementsByClassName("ss 4")
-  
-  for(j=0;j<acessanotas.length;j++){
-  
-  acessanotas[j].style.display = "block"
-  
-  }
-  }
-function teste3(){
- var acessanotas = document.getElementsByClassName(' 5');
-
- for( i=0; i<acessanotas.length;i++){
-  acessanotas[i].style.display= "block"
-
- }
- var acessanotas = document.getElementsByClassName(' 3');
-
- for( i=0; i<acessanotas.length;i++){
-  acessanotas[i].style.display= "block"
-
- }
- var acessanotass = document.getElementsByClassName("F b 3")
-  
- for(k=0;k<acessanotass.length;k++){
  
- acessanotass[k].style.display = "block"
-
-    console.log(acessanotass)
-}
 
 }
+
   
-teste3()
-teste2()
+
+teste()
 
 
 //testes das funções 
