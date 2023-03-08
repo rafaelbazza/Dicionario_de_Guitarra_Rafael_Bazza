@@ -671,7 +671,7 @@ function setimaMenor(tonica) {
 
         }
 
-        intervalo = intervalo + "," + cromatica[j];
+        intervalo =  cromatica[j];
 
 
 
@@ -2275,7 +2275,168 @@ function triadeMenorCAGEDD(tonica){
 }
 
 
-reset();
+//terças e setimas 
+
+
+function terçaMenorSetimaMenor(tonica,c1,c2){
+
+  reset();
+
+  terçaMenor(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+
+}
+
+function terçaMaiorSetimaMaior(tonica,c1,c2){
+
+  reset();
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+  setimaMaior(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+
+}
+
+function terçaMaiorSetimaMenor(tonica,c1,c2){
+
+  reset();
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray,c1)
+  mostraElemento(elementodesejadoArray,c2)
+
+
+}
+
+
+//função Secreta 
+
+
+
+function GiantSteps (tempo){
+
+  
+  
+  
+  function GiantStepsMaj7(tonica){
+      
+    setTimeout(() => {
+
+      terçaMaiorSetimaMaior(tonica,4,3)
+      
+    }, timeout = j);
+    
+    j=j+tempo
+
+
+  }
+
+  function GiantStepsm7(tonica){
+      
+    setTimeout(() => {
+
+      terçaMenorSetimaMenor(tonica,4,3)
+      
+    }, timeout = j);
+    
+    j=j+tempo
+
+
+  }
+
+  function GiantSteps7(tonica){
+      
+    setTimeout(() => {
+
+      terçaMaiorSetimaMenor(tonica,4,3)
+      
+    }, timeout = j);
+    
+    j=j+tempo
+
+
+  }
+
+    let j = tempo
+
+  
+GiantStepsMaj7(B)
+GiantSteps7(D)
+GiantStepsMaj7(G)
+GiantSteps7(Bb)
+GiantStepsMaj7(Eb)
+
+GiantStepsm7(A)
+GiantSteps7(D)
+
+GiantStepsMaj7(G)
+GiantSteps7(Bb)
+GiantStepsMaj7(Eb)
+GiantSteps7(Fs)
+GiantStepsMaj7(B)
+
+GiantStepsm7(F)
+GiantSteps7(Bb)
+GiantStepsMaj7(Eb)
+
+GiantStepsm7(A)
+GiantSteps7(D)
+GiantStepsMaj7(G)
+
+
+GiantStepsm7(Cs)
+GiantSteps7(Fs)
+GiantStepsMaj7(B)
+
+GiantStepsm7(F)
+GiantSteps7(Bb)
+GiantStepsMaj7(Eb)
+
+
+GiantStepsm7(Cs)
+GiantSteps7(Fs)
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+    
+  }
+
+
+
+
+
+
+
 
 
 
