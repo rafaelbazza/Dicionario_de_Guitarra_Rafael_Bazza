@@ -111,7 +111,7 @@ function Fundamental(tonica){
 
     elementodesejadoArray = intervalo.split(",");
 
-    //console.log(elementodesejadoArray)
+    console.log(elementodesejadoArray)
    
 
 
@@ -177,14 +177,47 @@ function segundaMaior(tonica) {
 
     }
 
-    elementodesejadoArray = intervalo.split(",");
+    elementodesejadoArray =  intervalo.split(",");
 
 
-    //for responsavel por jogar a escala pro braço 
+   // console.log(elementodesejadoArray)
 
 
 
     
+
+}
+
+function segundaAumentada(tonica) {
+
+  let j = tonica;
+  var intervalo = cromatica[j];
+
+  for (i = 0; i < 2; i++) {
+
+      if (i = 1) {
+
+          if (j < 27) { j = j + 6 } 
+          else {
+                  if (j >= 27) { j = j - 27 }
+}
+}
+
+      intervalo =  cromatica[j];
+
+
+
+
+  }
+
+  elementodesejadoArray =  intervalo.split(",");
+
+
+  //console.log(elementodesejadoArray)
+
+
+
+  
 
 }
 
@@ -339,7 +372,7 @@ function quartaAumentada(tonica) {
 
         }
 
-        intervalo =   cromatica[j];
+        intervalo =    cromatica[j];
 
 
 
@@ -348,7 +381,7 @@ function quartaAumentada(tonica) {
 
     elementodesejadoArray = intervalo.split(",");
 
-    console.log(intervalo)
+    //console.log(elementodesejadoArray)
    
     
  
@@ -389,7 +422,7 @@ function quintaDiminuta(tonica) {
     elementodesejadoArray = intervalo.split(",");
 
    
-   //console.log(intervalo)
+   //console.log(elementodesejadoArray)
     
  
   
@@ -571,6 +604,46 @@ function sextaMaior(tonica) {
     
 
   
+}
+function setimaDiminuta(tonica) {
+
+  let j = tonica;
+  var intervalo = cromatica[j];
+
+  for (i = 0; i < 2; i++) {
+
+     
+
+
+
+
+      if (i = 1) {
+
+        if(j==18){j=9}else{
+          if (j < 6) { j = j + 27 } 
+          else {
+
+
+              if (j >= 6) { j = j - 6 }
+
+
+          }}
+
+      }
+
+      intervalo =  cromatica[j];
+
+
+
+
+  }
+
+  elementodesejadoArray = intervalo.split(",");
+
+  //console.log(elementodesejadoArray)
+  // console.log(intervalo)
+
+
 }
 function setimaMenor(tonica) {
 
@@ -1655,6 +1728,8 @@ function pentatonica(tonica){
 
 };
 
+//penta blues
+
 function pentaBlues(tonica){
 
     reset();
@@ -1669,7 +1744,7 @@ function pentaBlues(tonica){
     mostraElemento(elementodesejadoArray);
 
          //intervalo 
-         terçaMenor(tonica);
+         segundaAumentada(tonica);
          //mostra intervalo
         mostraElemento(elementodesejadoArray);
 
@@ -1690,6 +1765,8 @@ function pentaBlues(tonica){
   
 
 };
+
+//menor harmonica
 
 function menorHarmonica(tonica){
     reset()
@@ -1715,6 +1792,8 @@ function menorHarmonica(tonica){
     mostraElemento(elementodesejadoArray)
 }
 
+//menor melodica
+
 function menorMelodica(tonica){
     reset()
     Fundamental(tonica)
@@ -1739,6 +1818,8 @@ function menorMelodica(tonica){
     mostraElemento(elementodesejadoArray)
 }
 
+//escala diminuta
+
 function escalaDiminuta(tonica){
 
     reset();
@@ -1761,12 +1842,14 @@ function escalaDiminuta(tonica){
     sextaMenor(tonica);
     mostraElemento(elementodesejadoArray);
 
-    sextaMaior(tonica);
+    setimaDiminuta(tonica);
     mostraElemento(elementodesejadoArray);
 
     setimaMaior(tonica);
     mostraElemento(elementodesejadoArray);
 }
+
+//tons inteiros 
 function tonsInteiros(tonica){
    
     reset()
@@ -1789,6 +1872,29 @@ function tonsInteiros(tonica){
     setimaMenor(tonica);
     mostraElemento(elementodesejadoArray);
 
+}
+//escala aumentada
+
+function escalaAumentada(tonica){
+  reset()
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray);
+
+  segundaAumentada(tonica);
+  mostraElemento(elementodesejadoArray);
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray);
+
+  quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray);
+
+  sextaMenor(tonica);
+  mostraElemento(elementodesejadoArray);
+
+  setimaMaior(tonica);
+  mostraElemento(elementodesejadoArray);
 }
 
 //triades
@@ -2016,7 +2122,7 @@ function tetradeDiminuta(tonica){
     quintaDiminuta(tonica);
     mostraElemento(elementodesejadoArray);
 
-    sextaMaior(tonica);
+    setimaDiminuta(tonica);
     mostraElemento(elementodesejadoArray);
 }
 
@@ -2168,56 +2274,38 @@ function triadeMenorCAGEDD(tonica){
     
 }
 
-function teste(){
-
-var acessanotas = document.getElementsByClassName("B s")
-
-for(j=0;j<acessanotas.length;j++){
-
-acessanotas[j].style.display = "block"
-console.log(acessanotas)
-
-}
-
-
-
-var acessanotass = document.getElementsByClassName("D ss")
-  
-    for(k=0;k<acessanotass.length;k++){
-    
-    acessanotass[k].style.display = "block"
-    console.log(acessanotas)
-   
-      
-}
- 
-
-}
-
-  
-
-teste()
 
 
 //testes das funções 
+//maior 
 /*
-setimaMenor(C);
-setimaMenor(Cs);
-setimaMenor(Db);
-setimaMenor(D);
-setimaMenor(Ds);
-setimaMenor(Eb);
-setimaMenor(E);
-setimaMenor(Es);
-setimaMenor(F);
-setimaMenor(Fs);
-setimaMenor(Gb);
-setimaMenor(G);
-setimaMenor(Gs);
-setimaMenor(Ab);
-setimaMenor(A);
-setimaMenor(As);
-setimaMenor(Bb);
-setimaMenor(B);
-setimaMenor(Bs);
-setimaMenor(Cb);*/
+Fundamental(C);
+Fundamental(G);
+Fundamental(D);
+Fundamental(A);
+Fundamental(E);
+Fundamental(B);
+Fundamental(Fs);
+Fundamental(F);
+Fundamental(Bb);
+Fundamental(Eb);
+Fundamental(Ab);
+Fundamental(Db);
+Fundamental(Gb);
+
+console.log('cauabanda')
+
+Fundamental(A);
+Fundamental(E);
+Fundamental(B);
+Fundamental(Fs);
+Fundamental(Cs);
+Fundamental(Gs);
+Fundamental(Ds);
+Fundamental(D);
+Fundamental(G);
+Fundamental(C);
+Fundamental(F);
+Fundamental(Bb);
+Fundamental(Eb);
+*/
