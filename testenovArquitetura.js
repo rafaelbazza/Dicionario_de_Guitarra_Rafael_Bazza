@@ -2275,6 +2275,9 @@ function triadeMenorCAGEDD(tonica){
 }
 
 
+reset();
+
+
 
 //testes das funções 
 //maior 
