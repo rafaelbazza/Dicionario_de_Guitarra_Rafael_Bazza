@@ -2127,7 +2127,7 @@ function tetradeDiminuta(tonica){
 }
 
 
-//Acordes Caged 
+//Acordes Caged triades
 
 function triadeMaiorCAGEDC(tonica){
 
@@ -2273,6 +2273,412 @@ function triadeMenorCAGEDD(tonica){
    
     
 }
+
+
+
+//acordes caged tetrades
+
+
+
+
+//x7
+
+function x7CAGEDA(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+
+  terçaMaior(tonica);
+
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+
+  quintaJusta(tonica);
+
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+  setimaMenor(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+
+
+
+}
+
+//inversões
+
+function x7CAGEDAinv1(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+ 
+ 
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+  
+
+
+  quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+
+
+}
+
+function x7CAGEDAinv2(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+ 
+   quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+
+
+ 
+
+  setimaMenor(tonica);
+ mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+
+
+}
+
+function x7CAGEDAinv3(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+ 
+
+ 
+   quintaJusta(tonica);
+   mostraElemento(elementodesejadoArray, 3)
+   mostraElemento(elementodesejadoArray, 4)
+
+
+
+ 
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+  
+
+
+
+
+}
+
+//xMaj7
+
+function xMaj7CAGEDA(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+
+  terçaMaior(tonica);
+
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+
+  quintaJusta(tonica);
+
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+  setimaMaior(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+
+
+
+}
+
+//inversões
+
+function xMaj7CAGEDAinv1(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+ 
+ 
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+  
+
+
+  quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+  setimaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+
+
+}
+
+function xMaj7CAGEDAinv2(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+ 
+   quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+
+
+ 
+
+  setimaMaior(tonica);
+ mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+
+
+}
+
+function xMaj7CAGEDAinv3(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+  terçaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+ 
+
+ 
+   quintaJusta(tonica);
+   mostraElemento(elementodesejadoArray, 3)
+   mostraElemento(elementodesejadoArray, 4)
+
+
+
+ 
+
+  setimaMaior(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+  
+
+
+
+
+}
+
+
+//xm7
+
+function xm7CAGEDA(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+
+  terçaMenor(tonica);
+
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+
+  quintaJusta(tonica);
+
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+  setimaMenor(tonica);
+ 
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+
+
+
+}
+
+//inversões
+
+function xm7CAGEDAinv1(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+ 
+ 
+
+  terçaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+ 
+  
+
+
+  quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+
+
+}
+
+function xm7CAGEDAinv2(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+
+  terçaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 3)
+  mostraElemento(elementodesejadoArray, 4)
+
+ 
+   quintaJusta(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+
+
+ 
+
+  setimaMenor(tonica);
+ mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+
+
+}
+
+function xm7CAGEDAinv3(tonica){
+
+  reset();
+
+  Fundamental(tonica);
+  mostraElemento(elementodesejadoArray, 2)
+  mostraElemento(elementodesejadoArray, 3)
+  
+
+
+  terçaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 4)
+  mostraElemento(elementodesejadoArray, 5)
+
+ 
+
+ 
+   quintaJusta(tonica);
+   mostraElemento(elementodesejadoArray, 3)
+   mostraElemento(elementodesejadoArray, 4)
+
+
+
+ 
+
+  setimaMenor(tonica);
+  mostraElemento(elementodesejadoArray, 5)
+  mostraElemento(elementodesejadoArray, 6)
+  
+
+
+
+
+}
+
+
+
+
+
 
 
 //terças e setimas 
@@ -2433,14 +2839,316 @@ GiantSteps7(Fs)
 
 
 
+  /*Esse código abaixo permite que eu use animações longas com recurso settimeout, caso eu recarregue a pagina, antes de recarregar, esse código 
+  irá interromper os timeout disparados, evitando possiveis erros ao recarregar a página */
+
+  window.addEventListener('beforeunload' , clearTimeout())
+
+
+
+  //começando desenvolver som das notas 
+
+//variaveis para puxar as notas genericamente   
+
+
+
+
+var notasC = document.getElementsByClassName("C  ");
+
+var notasD = document.getElementsByClassName("D");
+
+var notasE = document.getElementsByClassName("E  ");
+
+var notasF = document.getElementsByClassName("F  ");
+
+var notasG = document.getElementsByClassName("G  ");
+
+var notasA = document.getElementsByClassName("A  ");
+
+var notasB= document.getElementsByClassName("B  ");
+
+var notas = document.getElementsByClassName('a')
+
+//function que age dentro do for para puxar a nota e atribuir o som 
+
+
+function tocaNota(nota,acidente,oitava,notasom){
+
+  if(notas[i].classList[3] == nota ){
+    
+    if(notas[i].classList[1]==acidente){
+
+      if(notas[i].classList[5]==oitava ){
+  
+        notas[i].addEventListener("click" , ()=>{ 
+          
+          if(audioTocado){
+            audioTocado.pause();
+            audioTocado.load();
+          };
+      
+          notasom.play();
+      
+       
+       audioTocado = notasom
+      
+        })
+      
+      }
+  
+      
+  
+  
+  
+  
+    }
+
+
+  }
+
+ 
+}
+
+
+//essa variavel é responsavel por gerar o comportamento dentro do for, que permite que eu interrompa o som de uma nota para tocar outra 
+let audioTocado = null
+
+
+//esse for abaixo é responsavel por gerar as notas E  para cada oitava e acidente  ao longo do braço 
+
+function atribuiSomANota(){
+
+for(i=0;i<notas.length;i++){
+
+//naturais 
+tocaNota("E", "n", "8va2",E2)
+tocaNota("F", "n", "8va2",F2)
+tocaNota("G", "n", "8va2",G2)
+tocaNota("A", "n", "8va2",A2)
+tocaNota("B", "n", "8va2",B2)
+
+
+tocaNota("C", "n", "8va3",C3)
+tocaNota("D", "n", "8va3",D3)
+tocaNota("E", "n", "8va3",E3)
+tocaNota("F", "n", "8va3",F3)
+tocaNota("G", "n", "8va3",G3)
+tocaNota("A", "n", "8va3",A3)
+tocaNota("B", "n", "8va3",B3)
+
+tocaNota("C", "n", "8va4",C4)
+tocaNota("D", "n", "8va4",D4)
+tocaNota("E", "n", "8va4",E4)
+tocaNota("F", "n", "8va4",F4)
+tocaNota("G", "n", "8va4",G4)
+tocaNota("A", "n", "8va4",A4)
+tocaNota("B", "n", "8va4",B4)
+
+tocaNota("C", "n", "8va5",C5)
+tocaNota("D", "n", "8va5",D5)
+tocaNota("E", "n", "8va5",E5)
+tocaNota("F", "n", "8va5",F5)
+tocaNota("G", "n", "8va5",G5)
+tocaNota("A", "n", "8va5",A5)
+tocaNota("B", "n", "8va5",B5)
+
+tocaNota("C", "n", "8va6",C6)
+tocaNota("D", "n", "8va6",D6)
+
+
+
+//sustenido
+
+
+tocaNota("E", "s", "8va2",F2)
+tocaNota("F", "s", "8va2",Fs2)
+tocaNota("G", "s", "8va2",Gs2)
+tocaNota("A", "s", "8va2",As2)
+tocaNota("B", "s", "8va2",C3)
+
+
+tocaNota("C", "s", "8va3",Cs3)
+tocaNota("D", "s", "8va3",Ds3)
+tocaNota("E", "s", "8va3",F3)
+tocaNota("F", "s", "8va3",Fs3)
+tocaNota("G", "s", "8va3",Gs3)
+tocaNota("A", "s", "8va3",As3)
+tocaNota("B", "s", "8va3",C4)
+
+tocaNota("C", "s", "8va4",Cs4)
+tocaNota("D", "s", "8va4",Ds4)
+tocaNota("E", "s", "8va4",F4)
+tocaNota("F", "s", "8va4",Fs4)
+tocaNota("G", "s", "8va4",Gs4)
+tocaNota("A", "s", "8va4",As4)
+tocaNota("B", "s", "8va4",C5)
+
+tocaNota("C", "s", "8va5",Cs5)
+tocaNota("D", "s", "8va5",Ds5)
+tocaNota("E", "s", "8va5",F5)
+tocaNota("F", "s", "8va5",Fs5)
+tocaNota("G", "s", "8va5",Gs5)
+tocaNota("A", "s", "8va5",As5)
+tocaNota("B", "s", "8va5",C6)
+
+tocaNota("C", "s", "8va6",Cs6)
+
+
+
+//bemois
+
+
+tocaNota("F", "b", "8va2",E2)
+tocaNota("G", "b", "8va2",Fs2)
+tocaNota("A", "b", "8va2",Gs2)
+tocaNota("B", "b", "8va2",As2)
+
+
+tocaNota("C", "b", "8va3",B2)
+tocaNota("D", "b", "8va3",Cs3)
+tocaNota("E", "b", "8va3",Ds3)
+tocaNota("F", "b", "8va3",E3)
+tocaNota("G", "b", "8va3",Fs3)
+tocaNota("A", "b", "8va3",Gs3)
+tocaNota("B", "b", "8va3",As3)
+
+tocaNota("C", "b", "8va4",B3)
+tocaNota("D", "b", "8va4",Cs4)
+tocaNota("E", "b", "8va4",Ds4)
+tocaNota("F", "b", "8va4",E4)
+tocaNota("G", "b", "8va4",Fs4)
+tocaNota("A", "b", "8va4",Gs4)
+tocaNota("B", "b", "8va4",As4)
+
+tocaNota("C", "b", "8va5",B4)
+tocaNota("D", "b", "8va5",Cs5)
+tocaNota("E", "b", "8va5",Ds5)
+tocaNota("F", "b", "8va5",E5)
+tocaNota("G", "b", "8va5",Fs5)
+tocaNota("A", "b", "8va5",Gs5)
+tocaNota("B", "b", "8va5",As5)
+
+tocaNota("C", "b", "8va6",B5)
+tocaNota("D", "b", "8va6",Cs6)
+
+
+//dobrado bemol
+
+tocaNota("G", "bb", "8va2",F2)
+tocaNota("A", "bb", "8va2",G2)
+tocaNota("B", "bb", "8va2",A2)
+
+
+
+tocaNota("C", "bb", "8va3",As2)
+tocaNota("D", "bb", "8va3",C3)
+tocaNota("E", "bb", "8va3",D3)
+tocaNota("G", "bb", "8va3",F3)
+tocaNota("A", "bb", "8va3",G3)
+tocaNota("B", "bb", "8va3",A3)
+
+tocaNota("C", "bb", "8va4",As3)
+tocaNota("D", "bb", "8va4",C4)
+tocaNota("E", "bb", "8va4",D4)
+tocaNota("G", "bb", "8va4",F4)
+tocaNota("A", "bb", "8va4",G4)
+tocaNota("B", "bb", "8va4",A4)
+
+tocaNota("C", "bb", "8va5",As4)
+tocaNota("D", "bb", "8va5",C5)
+tocaNota("E", "bb", "8va5",D5)
+tocaNota("G", "bb", "8va5",F5)
+tocaNota("A", "bb", "8va5",G5)
+tocaNota("B", "bb", "8va5",A5)
+
+tocaNota("C", "bb", "8va6",As5)
+tocaNota("D", "bb", "8va6",C6)
+tocaNota("E", "bb", "8va6",D6)
+
+
+
+
+
+//dobrado sustenido
+
+
+tocaNota("D", "ss", "8va2",E2)
+tocaNota("E", "ss", "8va2",Fs2)
+tocaNota("F", "ss", "8va2",G2)
+tocaNota("G", "ss", "8va2",A2)
+tocaNota("A", "ss", "8va2",B2)
+
+tocaNota("C", "ss", "8va3",D3)
+tocaNota("D", "ss", "8va3",E3)
+tocaNota("E", "ss", "8va3",Fs3)
+tocaNota("F", "ss", "8va3",G3)
+tocaNota("G", "ss", "8va3",A3)
+tocaNota("A", "ss", "8va3",B3)
+
+tocaNota("C", "ss", "8va4",D4)
+tocaNota("D", "ss", "8va4",E4)
+tocaNota("E", "ss", "8va4",Fs4)
+tocaNota("F", "ss", "8va4",G4)
+tocaNota("G", "ss", "8va4",A4)
+tocaNota("A", "ss", "8va4",B4)
+
+tocaNota("C", "ss", "8va5",D5)
+tocaNota("D", "ss", "8va5",E5)
+tocaNota("E", "ss", "8va5",Fs5)
+tocaNota("F", "ss", "8va5",G5)
+tocaNota("G", "ss", "8va5",A5)
+tocaNota("A", "ss", "8va5",B5)
+
+tocaNota("C", "ss", "8va6",D6)
+
+
+
+
+
+ 
+
+
+}
+
+}
+
+
+atribuiSomANota()
 
 
 
 
 
 
+// functions testes
 
-//testes das funções 
+/*
+function mostraMostra(nota,acidente,corda){
+
+  reset();
+
+  var acessanotas = document.getElementsByClassName(`${nota} ${acidente} ${corda}`);
+
+  for(i=0;i<acessanotas.length;i++){
+
+    acessanotas[i].style.display="block"
+  }
+
+
+
+
+}
+
+mostraMostra("ss","","");
+
+*/
+
+
+
+
+
+
+//testes das funções de elementos
 //maior 
 /*
 Fundamental(C);

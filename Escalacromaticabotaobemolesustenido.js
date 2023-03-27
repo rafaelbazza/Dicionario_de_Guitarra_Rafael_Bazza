@@ -12,6 +12,7 @@ rg= região grave
 */ 
 
 var notas = document.getElementsByClassName("a")
+var naturais = document.getElementsByClassName("n")
 var notassustenido = document.getElementsByClassName('s')
 var notasbemol = document.getElementsByClassName('b')
 var dobemol = document.getElementsByClassName('C b')
@@ -22,54 +23,48 @@ var mostranotassustenido =document.getElementById("escalacromaticacomacidentesem
 
 mostranotasbemol.addEventListener('click', function(){
 
+    reset();
+
+    for(a=0;a<naturais.length;a++){
+      naturais[a].style.display="block"
+
+    }
+
+    for(a=0;a<notasbemol.length;a++){
+       console.log(notasbemol[a].classList[3])
+
+        notasbemol[a].style.display="block"
+
+        if(notasbemol[a].classList[3]=="C"||notasbemol[a].classList[3]=="F"){
+            notasbemol[a].style.display="none"
+        }
+  
+      }
    
 
-    for ( i = 0; i<notas.length; i++){
-              notas[i].style.display="block"
-                   
-}
-
-    for (i = 0; i<notassustenido.length; i++){
-       notassustenido[i].style.display="none"
-     }
-     
-     
-     for ( i=0; i<dobemol.length; i++){
-     
-        dobemol[i].style.display="none"
-    }
     
-    for (i = 0; i<misustenido.length; i++){
-        misustenido[i].style.display="none"
-      }
-
-
 
 })
 
 mostranotassustenido.addEventListener('click', function(){
 
-    for (i = 0; i<notas.length; i++){
+reset();
 
-        notas[i].style.display="block"
-                   
-}
+for(a=0;a<naturais.length;a++){
+    naturais[a].style.display="block"
 
-    for (i = 0; i<notasbemol.length; i++){
-
-        notasbemol[i].style.display="none"
-    
-}
-for ( i=0; i<dobemol.length; i++){
-     
-    dobemol[i].style.display="none"
-}
-
-for (i = 0; i<misustenido.length; i++){
-    misustenido[i].style.display="none"
   }
 
+  for(a=0;a<notassustenido.length;a++){
+     console.log(notassustenido[a].classList[3])
 
+      notassustenido[a].style.display="block"
+
+      if(notassustenido[a].classList[3]=="E"||notassustenido[a].classList[3]=="B"){
+          notassustenido[a].style.display="none"
+      }
+
+    }
 
 
 })
