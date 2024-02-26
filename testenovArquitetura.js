@@ -1,6 +1,6 @@
 
 //variaveis da escala cromatica com sustenidos, dobrados sustenidos, bemois e dobrado bemois. 
-
+var acessanotas = document.getElementsByClassName('a')
 var stringcromatica = "C n, C s, C ss, D bb, D b, D n, D s, D ss, E bb, E b, E n, E s, E ss, F b, F n, F s, F ss, G bb, G b, G n, G s, G ss, A bb, A b, A n, A s, A ss, B bb, B b, B n, B s, C bb, C b"
 var cromatica = stringcromatica.split(",");
 
@@ -33,6 +33,69 @@ var Bb = 28;
 var B = 29;
 var Bs = 30;
 var Cb = 32;
+
+
+
+
+function escurecerNotas(){
+
+var acessanotas = document.getElementsByClassName("a")
+
+   for(i=0; i<acessanotas.length; i++){
+        
+    acessanotas[i].addEventListener('mousedown', function(){
+
+    this.style.cursor = "pointer"
+    this.style.filter ="brightness(0.5)" 
+
+   
+      
+
+
+
+   
+
+        
+
+
+    })
+
+   } 
+
+   
+   for(i=0; i<acessanotas.length; i++){
+        
+    acessanotas[i].addEventListener('mouseup', function(){
+
+    this.style.cursor = "default"
+    this.style.filter ="brightness(1)" 
+
+   
+      
+
+
+
+   
+
+        
+
+
+    })
+
+   } 
+   
+  
+  
+
+
+
+};
+
+escurecerNotas()
+
+
+
+
 
 
 //function teste para mostrar todas notas
