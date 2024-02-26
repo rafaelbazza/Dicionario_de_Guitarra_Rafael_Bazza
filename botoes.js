@@ -517,7 +517,7 @@ function botaoDiatonicaCAGEDC() {
     var botaotomGb = document.getElementById("CAGEDGgb")
  
  
-    botaotomC.addEventListener("click", () => { diatonicaCAGEDE(C) })
+    botaotomC.addEventListener("click", () => { diatonicaCAGEDG(C) })
     botaotomG.addEventListener("click", () => { diatonicaCAGEDG(G) })
     botaotomD.addEventListener("click", () => { diatonicaCAGEDG(D) })
     botaotomA.addEventListener("click", () => { diatonicaCAGEDG(A) })

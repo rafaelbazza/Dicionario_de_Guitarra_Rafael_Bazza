@@ -81,6 +81,40 @@ var acessanotas = document.getElementsByClassName("a")
 
     })
 
+    acessanotas[i].addEventListener('touchmove', function(){
+
+    
+      this.style.filter ="brightness(1)" 
+  
+     
+        
+  
+  
+  
+     
+  
+          
+  
+  
+      })
+
+    acessanotas[i].addEventListener('mouseout', function(){
+
+    
+        this.style.filter ="brightness(1)" 
+    
+       
+          
+    
+    
+    
+       
+    
+            
+    
+    
+        })
+
     acessanotas[i].addEventListener('mouseup', function(){
       
       this.style.cursor = "default"
