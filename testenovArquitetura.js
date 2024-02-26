@@ -43,7 +43,7 @@ var acessanotas = document.getElementsByClassName("a")
 
    for(i=0; i<acessanotas.length; i++){
         
-    acessanotas[i].addEventListener('mousedown', function(){
+    acessanotas[i].addEventListener('touchstart', function(){
 
     this.style.cursor = "pointer"
     this.style.filter ="brightness(0.5)" 
@@ -65,7 +65,7 @@ var acessanotas = document.getElementsByClassName("a")
    
    for(i=0; i<acessanotas.length; i++){
         
-    acessanotas[i].addEventListener('mouseup', function(){
+    acessanotas[i].addEventListener('touchend', function(){
 
     this.style.cursor = "default"
     this.style.filter ="brightness(1)" 
