@@ -35,7 +35,13 @@ var Bs = 30;
 var Cb = 32;
 
 
+for(i=0; i<acessanotas.length;i++){
 
+  console.log(acessanotas[i])
+
+  acessanotas[i].style.userSelect = 'none'
+
+}
 
 function escurecerNotas(){
 
@@ -45,8 +51,10 @@ var acessanotas = document.getElementsByClassName("a")
         
     acessanotas[i].addEventListener('touchstart', function(){
 
-    this.style.cursor = "pointer"
+   
     this.style.filter ="brightness(0.5)" 
+    
+
 
    
       
@@ -60,6 +68,12 @@ var acessanotas = document.getElementsByClassName("a")
 
     })
 
+    acessanotas[i].addEventListener('mousedown', function(){
+      this.style.cursor = "pointer"
+      this.style.filter ="brightness(0.5)" 
+      
+    })
+
    } 
 
    
@@ -67,7 +81,7 @@ var acessanotas = document.getElementsByClassName("a")
         
     acessanotas[i].addEventListener('touchend', function(){
 
-    this.style.cursor = "default"
+    
     this.style.filter ="brightness(1)" 
 
    
@@ -79,6 +93,13 @@ var acessanotas = document.getElementsByClassName("a")
 
         
 
+
+    })
+
+    acessanotas[i].addEventListener('mouseup', function(){
+      
+      this.style.cursor = "default"
+      this.style.filter ="brightness(1)" 
 
     })
 
