@@ -2949,7 +2949,7 @@ function tocaNota(nota,acidente,oitava,notasom){
 
       if(notas[i].classList[5]==oitava ){
   
-        notas[i].addEventListener("click" , ()=>{ 
+        notas[i].addEventListener("mousedown" , ()=>{ 
           
           if(audioTocado){
             audioTocado.pause();
@@ -2963,7 +2963,7 @@ function tocaNota(nota,acidente,oitava,notasom){
       
         })
 
-        notas[i].addEventListener("touchend" , ()=>{ 
+        notas[i].addEventListener("touchstart" , ()=>{ 
           
           if(audioTocado){
             audioTocado.pause();
