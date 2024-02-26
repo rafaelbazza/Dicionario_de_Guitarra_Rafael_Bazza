@@ -35,13 +35,7 @@ var Bs = 30;
 var Cb = 32;
 
 
-for(i=0; i<acessanotas.length;i++){
 
-  console.log(acessanotas[i])
-
-  acessanotas[i].style.userSelect = 'none'
-
-}
 
 function escurecerNotas(){
 
@@ -49,30 +43,21 @@ var acessanotas = document.getElementsByClassName("a")
 
    for(i=0; i<acessanotas.length; i++){
         
-    acessanotas[i].addEventListener('touchstart', function(){
+    acessanotas[i].addEventListener('touchstart', function(event){
 
-   
+
+    event.preventDefault();
     this.style.filter ="brightness(0.5)" 
-    
+        })
 
-
-   
-      
-
-
-
-   
-
-        
-
-
-    })
-
-    acessanotas[i].addEventListener('mousedown', function(){
+    acessanotas[i].addEventListener('mousedown', function(event){
+      event.preventDefault();
       this.style.cursor = "pointer"
       this.style.filter ="brightness(0.5)" 
       
     })
+
+   
 
    } 
 
@@ -2977,8 +2962,27 @@ function tocaNota(nota,acidente,oitava,notasom){
        audioTocado = notasom
       
         })
+
+        notas[i].addEventListener("touchend" , ()=>{ 
+          
+          if(audioTocado){
+            audioTocado.pause();
+            audioTocado.load();
+          };
+      
+          notasom.play();
+      
+       
+       audioTocado = notasom
+      
+        })
+
+
+        
       
       }
+
+      
   
       
   
